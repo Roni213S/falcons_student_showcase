@@ -89,3 +89,114 @@ body {
     color: #333;
   }
 }
+
+/*Video Player*/
+#promo-video {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-controls.hidden {
+    display: none;
+}
+
+.video-controls {
+    position: absolute; /*this places the controls on top of the video display, 
+    absolute position allows us to position using right, left,bottom and top.
+    we can only positon it absolute if the container it is in has position relative.
+    lets us stack elements on top of eachother.*/
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0,0.3), rgba(0,0,0,0.5));
+    background-color: navy;
+    display: flex; /*default flex display is flex-row*/
+    transition: all 0.2s ease-in-out;
+    
+}
+
+/*if the user hovers over the video controls but they are hidden (JS variable enabled) the videoControls will stay hidden*/
+.video-controls.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+button {
+    padding:0;
+    border: 0;
+    background-color: transparent;
+}
+
+.fa, .fa-solid {
+    color: white;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.fa-volume-up {
+    margin-left: auto; /*positions the volume controls furthest to the right of its container.*/
+}
+
+/*style the volume range slider using css created using: https://range-input-css.netlify.app/*/
+/*********** Baseline, reset styles ***********/
+    input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 25rem;
+    }
+
+    /* Removes default focus */
+    input[type="range"]:focus {
+    outline: none;
+    }
+
+    /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+    /* slider track */
+    input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    height: 1rem;
+    }
+
+    /* slider thumb */
+    input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px; /* Centers thumb on the track */
+    background-color: #b4cef9;
+    border-radius: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    }
+
+    input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #b4cef9;
+    outline-offset: 0.125rem;
+    }
+
+    /*********** Firefox styles ***********/
+    /* slider track */
+    input[type="range"]::-moz-range-track {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    height: 1rem;
+    }
+
+    /* slider thumb */
+    input[type="range"]::-moz-range-thumb {
+    background-color: #b4cef9;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    }
+
+    input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #b4cef9;
+    outline-offset: 0.125rem;
+    }
