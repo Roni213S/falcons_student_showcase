@@ -18,31 +18,65 @@
             <div class="box col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-4 l-col-end-13" id="main-logo">Nav</div>
         </header>
         <main>
+            <!--hero-section-->
             <section class="grid-con" id="hero-con">
                 <div class="box col-span-full m-col-span-full l-col-span-full" id="hero">FANSHAWE</div>
             </section>
+
+            <!--hero-animation-section-->
             <section class="grid-con" id="giant-fanshawe-logo">
                 <div class="box col-span-full m-col-span-full l-col-span-full">[giant logo with fade away effect]<p>INTERACTIVE MEDIA DESIGN</p></div>
             </section>
+
+            <!--event-info-section-->
             <section class="grid-con" id="industry-night-info">
                 <div class="box col-span-full m-col-span-full l-col-span-full">[small logo]<p>Industry Night & Date</p></div>
             </section>
+
+            <!--additional-event-info-section-->
             <section class="grid-con" id="industry-night-details">
                 <div class="box col-span-full m-col-span-full l-col-span-full">Industry Night info details</div>
             </section>
-            <section class="grid-con" id="promo-video">
+
+            <!--video player-->
+            <section id="promo-video" class="grid-con">
                 <div class="box col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-11">Video and Some descriptions
-                    <video controls>
-                        <source>
+                    <video class="col-span-full" controls preload="metadata" poster="images/placeholder.jpg">
+                        <source src="video/video.mp4" type="video/mp4">
+                        <source src="video/video.webm" type="video/webm">
+                        <p>You are using an older browser that does not support HTML5 Video.
+                        Please update your browser.</p>
                     </video>
+                    <div class="video-controls hidden" id="video-controls">
+                        <button id="play-button>">
+                            <i class="fa fa-play-circle-o"></i><!--<i> is an icon tag-->
+                        </button>
+                        <button id="pause-button>">
+                            <i class="fa fa-pause-circle-o"></i>
+                        </button>
+                        <button id="stop-button>">
+                            <i class="fa fa-pause-circle-o"></i>
+                        </button>
+                        <i class="fa fa-volume-up"></i>
+                        <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+                        <button id="full-screen">
+                            <i class="fa fa-arrows-alt"></i>
+                        </button>
+                    </div>
                 </div>
             </section>
+
+            <!--gallery-section-->
             <section class="grid-con" id="gallery">
                 <div class="box col-span-full m-col-span-full l-col-span-full">Gallery Puzzle</div>
             </section>
+
+            <!--portfolios-section-->
             <section class="grid-con" id="portfolio">
                 <div class="box col-span-full m-col-span-full l-col-span-full">Students'Portfolio</div>
             </section>
+
+            <!--footer-section-->
         <footer class="grid-con" id="footer">
             <div class="box col-span-2">FanshaweLogo</div>
             <div class="box col-span-full">Fanshawe College, IDP3<br>© 2025 All Rights Reserved.</div>
