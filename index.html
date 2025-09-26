@@ -13,10 +13,31 @@
 </head>
 <body>
     <h1 class="hidden">Industry Night</h1>
-        <header class="grid-con" id="header">
-            <nav class="box col-span-2 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-4" id="main-nav">Fanshawe Logo</nav>
-            <div class="box col-start-4 col-end-5 m-col-start-3 m-col-end-13 l-col-start-4 l-col-end-13" id="main-logo">Nav</div>
-        </header>
+        <!-- Main Nav -->
+         
+        <!-- Sticky header -->
+            <div id="sticky-nav-con">
+                <header class="grid-con" id="main-header">
+                            
+                    <div id="logo" class="col-span-2 m-col-start-1 m-col-end-4 l-col-start-1 xl-col-end-4">
+                        <img src="images/FANSHAWELOGOWHITE.png" alt="Fanshawe Logo">
+                    </div>
+                        <input type="checkbox" id="menu-toggle" class="visually-hidden"> 
+                        <label id="burger-btn" for="menu-toggle" class="box col-span-2 m-col-start-11 m-col-end-13 l-col-start-11 xl-col-end-13">
+                            <img src="images/HAMBURGERMENU.png" alt="Menu">
+                        </label>
+                        <!--MENU-->
+                        <nav id="menu-list" class="col-span-2 m-col-start-8 m-col-end-13 l-col-start-8 l-col-end-13">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="#overview">OVERVIEW</a></li>
+                                <li><a href="#exhibit">EXHIBIT</a></li>
+                                <li><a href="#gallery">GALLERY</a></li>
+                                <li><a href="#portfolio">PORTFOLIO</a></li>
+                            </ul>
+                        </nav>
+                </header>
+            </div>
         <main>
             <!--hero-section-->
             <section class="grid-con" id="hero-con">
