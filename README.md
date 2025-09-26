@@ -2,7 +2,7 @@
 This is a project where our group is creating the new Industry Night Student Showcase for the Interactive Media Design program.
 
 ## Installation
-No installation required
+Clone the files from Github or download the ZIP file.
 
 ## Usage
 Open in a browser of your choice
@@ -21,4 +21,4 @@ Justine Nathalie Ng - Designer
 Syd Bandarra - Video/Motion Designer
 
 ## License
-Seek licence file
+This project is licensed under the [MIT License](LICENSE)
