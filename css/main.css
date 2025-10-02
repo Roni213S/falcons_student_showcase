@@ -1,202 +1,260 @@
+/*
+Style Name: Site Build 
+Description: Class File
+Author: Add your name here, yes you. 
+Version: 1.0
+Tags: Let's Build Something!
+*/
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* -------------
+  Fonts
+-------------- */
+
+
+/* ------------ */
+
+/* -------------
+  Plugins
+-------------*/
+
+/* -------------
+  Reset
+-------------*/
+
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #707070;
-  margin: 0;
+   margin: 0;
+   padding: 0;
+   color: #626262;
+   font-family: 'Sanchez', serif;
+   animation: bugfix infinite 1s;
+   -webkit-animation: bugfix infinite 1s;
+   font-size: 16px;
+   /* Any em and rem will be reflected by this number, making it easy to change everything at once */
+   
 }
 
-#sticky-nav-con {
-  background: #E32124; 
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+h1, h2, h3, h4, p {
+   margin: 0;
+   padding: 0;
 }
 
-#main-header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
-  padding: 10px 16px;
+a {
+   text-decoration: none;
 }
 
-/* Logo stays left */
-#logo {
-  grid-column: 1 / span 3;
-}
-#logo img {
-  height: 40px;
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
 }
 
-#menu-toggle {
-  display: none;
+.hidden {
+   display: none;
 }
 
-/* Burger goes far right */
-#burger-btn {
-  grid-column: -2 / -1;
-  justify-self: end;
-  cursor: pointer;
-}
-#burger-btn img {
-  height: 25px;
-}
+ /*------------ Build a Box ------------*/
 
-/* Mobile menu hidden by default */
-#menu-list {
-  grid-column: 1 / -1;
-}
-#menu-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-  background: #E32124;
-}
+ .box-model {
+   background: rgb(211, 211, 211);
+   padding: 1em;
+   margin: 1em;
+ }
 
-#menu-list li a {
-  display: block;
-  padding: 14px 18px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-}
+ /*------------ End Build a Box ------------*/
 
-/* Show menu when burger clicked */
-#menu-toggle:checked ~ #menu-list ul {
-  display: block;
-}
+/* ___________________________________________
 
-/* Desktop */
-@media (min-width: 768px) {
-  #burger-btn {
-    display: none; 
-  }
+       CSS Guide
+___________________________________________ */
 
-  #menu-list {
-    grid-column: 5 / -1;
-  }
-  #menu-list ul {
-    display: flex !important;
-    justify-content: flex-end;
-    background: none;
-  }
+/* 01. General Styles
+   02. Hero Image                        
+   03. Navigation
 
-  #menu-list li a {
-    color: #fff; 
-    padding: 10px 15px;
-  }
+/* _____________________________________
 
-  #menu-list li a:hover {
-    color: #333;
-  }
-}
+   01. General Styles
+   _____________________________________ */
 
-/*Video Player*/
-#promo-video {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
+   img {
+      display: block;
+      width: 100%;
+   }
 
-.video-controls.hidden {
-    display: none;
-}
+   input, textarea {
+      padding: .75em;
+      border: 1px solid #ccc;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      width: 95%;
+      margin-bottom: 1em;
+   }
 
-.video-controls {
-    position: absolute; /*this places the controls on top of the video display, 
-    absolute position allows us to position using right, left,bottom and top.
-    we can only positon it absolute if the container it is in has position relative.
-    lets us stack elements on top of eachother.*/
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding: 20px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0,0.3), rgba(0,0,0,0.5));
-    background-color: navy;
-    display: flex; /*default flex display is flex-row*/
-    transition: all 0.2s ease-in-out;
-    
-}
+   input[type="submit"] {
+      width: inherit;
+      padding: 1em 2em;
+      background: #e2231a;
+      color: #fff;
+      border: none;
+      float: right;
+   }
 
-/*if the user hovers over the video controls but they are hidden (JS variable enabled) the videoControls will stay hidden*/
-.video-controls.hide {
-    opacity: 0;
-    pointer-events: none;
-}
+   /*------------ Floats ------------*/
 
-button {
-    padding:0;
-    border: 0;
-    background-color: transparent;
-}
+   .f-left {
+      float: left;
+   }
 
-.fa, .fa-solid {
-    color: white;
-    font-size: 28px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+   .f-right {
+      float: right;
+   }
 
-.fa-volume-up {
-    margin-left: auto; /*positions the volume controls furthest to the right of its container.*/
-}
+   /*------------ End Floats ------------*/
 
-/*style the volume range slider using css created using: https://range-input-css.netlify.app/*/
-/*********** Baseline, reset styles ***********/
-    input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    background: transparent;
-    cursor: pointer;
-    width: 25rem;
-    }
+/*-------------- End General Styles --------------*/
 
-    /* Removes default focus */
-    input[type="range"]:focus {
-    outline: none;
-    }
+/* _____________________________________
 
-    /******** Chrome, Safari, Opera and Edge Chromium styles ********/
-    /* slider track */
-    input[type="range"]::-webkit-slider-runnable-track {
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    height: 1rem;
-    }
+   02. Hero Image
+   _____________________________________ */
 
-    /* slider thumb */
-    input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    margin-top: -4px; /* Centers thumb on the track */
-    background-color: #b4cef9;
-    border-radius: 1.5rem;
-    height: 1.5rem;
-    width: 1.5rem;
-    }
+   .hero {
+      margin: 0 0;
+   }
 
-    input[type="range"]:focus::-webkit-slider-thumb {
-    outline: 3px solid #b4cef9;
-    outline-offset: 0.125rem;
-    }
+   .hero-img img {
+      width: 100%;
+   }
 
-    /*********** Firefox styles ***********/
-    /* slider track */
-    input[type="range"]::-moz-range-track {
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    height: 1rem;
-    }
+   .hero-img {
+      display: grid;
+      grid-column: span 4;
+      margin-bottom: 1rem;
+   }
 
-    /* slider thumb */
-    input[type="range"]::-moz-range-thumb {
-    background-color: #b4cef9;
-    border: none; /*Removes extra border that FF applies*/
-    border-radius: 1.5rem;
-    height: 1.5rem;
-    width: 1.5rem;
-    }
+   .hero-img > * {
+      grid-column: 1;
+      grid-row: 1;
+   }
 
-    input[type="range"]:focus::-moz-range-thumb{
-    outline: 3px solid #b4cef9;
-    outline-offset: 0.125rem;
-    }
+   .hero-img h2 {
+      background:transparent;
+      padding: 1em 1.75em;
+      font-size: 1em;
+      font-weight: bolder;
+      text-align: center;
+   }
+
+   .hero-img h2 span {
+      font-size: 2em;
+      color: #e2231a;
+
+   }
+
+   .hero-img h2.left {
+      align-self: flex-end;
+      justify-self: start;
+      margin-left: 1em;
+   }
+
+   .hero-img h2.right {
+      align-self: flex-end;
+      justify-self: end;
+      margin-right: 1em;
+   }
+
+   .hero-img h2.middle {
+      align-self:center;
+      justify-self:center;
+   }
+
+   @media screen and (min-width: 48em) {
+
+      .hero-img {
+         display: grid;
+         grid-column: span 6;
+         margin-bottom: 1rem;
+      }
+
+      .hero-img h2.left {
+         align-self: flex-end;
+         justify-self: start;
+         margin-left: 10vw;
+      }
+   
+      .hero-img h2.right {
+         align-self: flex-end;
+         justify-self: end;
+         margin-right: 2em;
+      }
+
+      .hero-img h2.middle {
+         align-self:flex-start;
+         justify-self:center;
+      }
+   }
+
+
+
+   /*-------------- End Hero Image --------------*/
+
+/* _____________________________________
+
+   03. Navigation
+   _____________________________________ */
+
+   #sticky-nav-con {
+      background: #E32124; 
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+   }
+
+   #sticky-nav-con li {
+      list-style: none;
+   }
+
+   #sticky-nav-con li a {
+      text-decoration: none;
+      color: #fff;
+   }
+
+
+
+
+
+   /*-------------- End Navigation --------------*/
