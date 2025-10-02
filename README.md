@@ -1,6 +1,8 @@
 # Industry Night Site: Team Falcons
 This is a project where our group is creating the new Industry Night Student Showcase for the Interactive Media Design program.
 
+This code was reworked to reflect our new positions.
+
 ## Installation
 Clone the files from Github or download the ZIP file.
 
@@ -15,10 +17,10 @@ Open in a browser of your choice
 5. Submit a pull request :D
 
 ## Credits
-Roni Soud - Project Manager
-Yi Lu - Front-End Developer
-Justine Nathalie Ng - Designer
-Syd Bandarra - Video/Motion Designer
+Justine Nathalie Ng - Project Manager
+Roni Soud - Front-End Developer
+Syd Bandarra - Designer
+Yi Lu - Video/Motion Designer
 
 ## License
 This project is licensed under the [MIT License](LICENSE)
