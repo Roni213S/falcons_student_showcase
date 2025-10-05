@@ -17,39 +17,57 @@
     <h1 class="hidden">Optimized Grid</h1>
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
     <header class="head">
-       <div class="logo">Fanshawe Logo</div>
-       <nav>
-            <h2>Nav Bar</h2>
+       <nav id="sticky-nav-con">
+            <div class="nav-container">
+                <ul>
+                    <li>Logo</li>
+                    <li>Menu</li>
+                </ul>
+            </div>
        </nav>
     </header>
 
     <main id="content" class="main">
         <section class="hero">
-            <div class="hero-img">
+            <h2 class="hidden">Hero Section</h2>
+            <div class="hero-img middle">
                 <picture>
                     <source media="(min-width:800px)" srcset="https://placehold.co/2200x600">
                     <source media="(min-width:465px)" srcset="https://placehold.co/600x400.png">
                     <img src="https://placehold.co/600x400.png" alt="FPO">
                 </picture> 
-                <h2 class="middle"><span>Industry Night</span><br><p>April 24, 2026</p><br>Showcasing Tomorrow's<br>Design Leaders, Today<br><p>Enter Here</p></h2>
+                <div class="one-item sm-one-item md-one-item lg-one-item hero-text">
+                    <h2 class="red-text">INDUSTRY NIGHT</h2>
+                    <p id="date-outline">April 24, 2026</p>
+                    <h3>Showcasing Tomorrow's<br>Design Leaders, Today</h3>
+                    <p class="white-text" id="enter-button">ENTER HERE</p>
+                </div>
             </div>
         </section>
 
 
-        <section>
-            <div class="one-item sm-one-item md-one-item lg-one-item">
-                <div class="box-model">Welcome Message</div>
+        <section class="calendar">
+            <h2 class="hidden">Calendar Section</h2>
+            <div class="one-item sm-one-item md-one-item lg-one-item calendar-content">
+                <p class="white-text" id="welcome-text">
+                    Join us for a showcase featuring the work of our IDP3 and UED students, alongside Spotlight presentations highlighting The Royal Canadian Air Force Association (Local 427 Wing)project.
+                </p>
             </div>
-            <div class="one-item sm-one-item md-one-item lg-one-item">
-                <div class="box-model">Join Us + Add to Calendar</div>
+            <div class="one-item sm-one-item md-one-item lg-one-item" id="join-us">
+                <div class="calendar-content">
+                    <h4>JOIN US FOR</h4> 
+                    <h2>Industry Night<br>2026</h2>
+                    <p>Add To Your Calendar</p>
+                </div>
             </div>
-            <div class="one-item sm-one-item md-one-item lg-one-item">
+            <div class="one-item sm-one-item md-one-item lg-one-item calendar-content">
                 <div class="box-model">Date + Time + Location</div>
             </div>
         </section>
 
         
         <section>
+            <h2 class="hidden">Map and Itinerary</h2>
             <div class="one-item sm-one-item md-one-item lg-one-item">
                 <div class="box-model">Google Maps</div>
             </div>
@@ -62,6 +80,7 @@
         </section>
 
         <section>
+            <h2 class="hidden">Video and Creator Showcase</h2>
             <div class="one-item sm-one-item md-one-item lg-one-item">
                 <div class="box-model">Video + Blurb</div>
             </div>
@@ -82,6 +101,7 @@
         </section>
 
         <section>
+            <h2 class="hidden">Testimonials</h2>
             <div class="one-item sm-one-item md-one-item lg-one-item">
                 <div class="box-model">Testimonials</div>
             </div>
@@ -91,42 +111,60 @@
         </section>
 
         <section>
-            <div class="one-item sm-one-item md-one-item lg-one-item">
+            <h2 class="hidden">Gallery</h2>
+            <div class="full">
                 <div class="box-model">Project Gallery</div>
             </div>
-            <div class="one-item sm-one-item md-one-item lg-one-item">
+            <div class="full">
                 <div class="box-model">Main Rotating Image</div>
             </div>
-            <div class="  sm-two-third md-two-third lg-two-third">
-                <div class="box-model">Main Rotating Image</div>
-                <div class="box-model">Main Rotating Image</div>
+            <div class="sm-two-third md-two-third lg-two-third">
+                <div class="box-model">Image 1</div>
+                <div class="box-model">Image 2</div>
+            </div>
+            <div class="one-item sm-one-item md-one-item lg-one-item">
+                <div class="box-model">Image 3</div>
+            </div>
+            <div class="full">
+                <div class="box-model">See More Button</div>
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <section>
+            <h2 class="hidden">Student Projects and Portfolios</h2>
+            <div class="one-item sm-one-item md-one-item lg-one-item">
+                <div class="box-model">Student Array</div>
+            </div>
+            <div class="one-item sm-one-item md-one-item lg-one-item">
+                <div class="box-model">Search Directory</div>
+            </div>
+            <div class="two-items sm-two-items md-two-items lg-two-items">
+                <div class="box-model">Project Manager</div>
+                <div class="box-model">Motion Design</div>
+            </div>
+            <div class="two-items sm-two-items md-two-items lg-two-items">
+                <div class="box-model">Web Developer</div>
+                <div class="box-model">Graphic Design</div>
+            </div>
+        </section>
     </main>
 
     <footer>
-
-
-
-
-
+        <h2 class="hidden">Footer</h2>
+        <div class="one-item sm-half-left md-half-left lg-half-left">
+            <div class="box-model">Footer</div>
+        </div>
+        <div class="one-item sm-half-left md-half-left lg-half-left">
+            <div class="box-model">1</div>
+        </div>
+        <div class="two-items sm-two-items md-two-items lg-two-items">
+            <div class="box-model">1</div>
+            <div class="box-model">1</div>
+        </div>
+        <div class="two-items sm-two-items md-two-items lg-two-items">
+            <div class="box-model">1</div>
+            <div class="box-model">1</div>
+        </div>
     </footer>
 </body>
 </html>
