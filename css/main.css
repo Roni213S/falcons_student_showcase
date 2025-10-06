@@ -126,6 +126,8 @@ p {
    02. Navigation                       
    03. Hero Section
    04. Calendar Section
+   05. Map Section
+   06. Video Section
 
 /* _____________________________________
 
@@ -329,22 +331,205 @@ p {
    }
 
 
-   #join-us h2{
+   #join-us h2 {
       line-height: 50px;
       margin-top: 8px;
       margin-bottom: 30px;
    }
 
-   #join-us p{
+   #join-us h4 {
+      font-weight:600;
+      margin-top: 9px;
+   }
+
+   #join-us p {
       display: table;
       margin-left: auto;
       background-color: #FFF;
       border-radius: 28px;
       padding: 0.8em 1.5em; 
+      margin-bottom: 20px;
+   }
+
+   .calendar-content .event-info {
+      margin-top: 0px;
+   }
+
+
+   .event-info h3 {
+      margin-bottom: 8px;
+   }
+
+   .event-info p {
+      line-height: 28px;
+      margin-bottom: 15px;
+   }
+
+
+/*-------------- End Calendar Section --------------*/
+
+
+/* _____________________________________
+
+   05. Map Section
+   _____________________________________ */
+
+
+   .map-info {
+      background-color: #E2231A;
+      width: 100%;
+      margin-top: 70px;
+      margin-left: 0;
+      margin-bottom: 50px;
+      border-radius: 28px;
+   }
+
+   #itinerary {
+      background-color: #e9e9e9;
+      border-radius: 28px;
+      width: 100%;
+      margin: 0;
+   }
+
+   .map-content {
+      padding: 1em;
+      margin: 1em;
+   }
+
+   .map-info h3 {
+      font-weight: 500;
+   }
+
+   #itinerary h2 {
+      line-height: 40px;
+      margin-bottom: 30px;
+   }
+
+   #itinerary h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+   }
+
+   #itinerary p {
+      margin-bottom: 20px;
+      line-height: 25px;
+   }
+
+   .map-content h4 {
+      font-weight: 400;
+   }
+
+/*-------------- End Map Section --------------*/
+
+/* _____________________________________
+
+   06. Video Section
+   _____________________________________ */
+
+   .video-section {
+      background-color: #E2231A;
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 0px;
+      margin-left: 0;
+      margin-bottom: 0px;
+      border-radius: 28px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+   }
+
+   #video-description {
+      background-color: #e9e9e9;
+      border-radius: 28px;
+      width: 100%;
+      margin: 0;
+   }
+
+   .video-content {
+      padding: 1em;
+      margin: 1em;
+   }
+
+   #video-box {
+      margin-bottom: 30px;
+   }
+
+   .video-content h3 {
+      font-weight: 600;
+      margin-bottom: 15px;
+      line-height: 30px;
+   }
+
+   .video-content p {
+      margin-bottom: 10px;
+      line-height: 30px;
+   }
+
+   #learn-more-button {
+      display: table;
+      margin-right: auto;
+      background-color: #FFF;
+      border-radius: 28px;
+      padding: 0.4em 1.5em; 
+      margin-top: 20px;
+   }
+/*-------------- End Video Section --------------*/
+
+
+/* _____________________________________
+
+   07. Creator Section
+   _____________________________________ */
+
+   .showcase {
+      background-color: #e3e3e3;
+      border-radius: 28px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      width: 100%;
+      margin: 0;
+   }
+
+   .showcase h4{
+      font-weight: 500;
+      margin-bottom: 20px;
+   }
+
+   .showcase h2{
+      line-height: 40px;
+   }
+
+   #showcase-puzzle {
+      background-color: #e3e3e3;
+      border-radius: 28px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      width: 100%;
+      margin: 0;
+      padding-bottom: 30px;
+   }
+
+/*------------ End Creator Showcase ------------*/
+
+
+
+/* _____________________________________
+
+   08. Testimonial Section
+   _____________________________________ */
+
+   .testimonials {
+      background-color: #E2231A;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 40px;
+      margin-left: 0;
+      margin-bottom: 50px;
+      border-radius: 28px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
    }
 
    
 
-
-
-/*-------------- End Calendar Section --------------*/
+/*------------ End Testimonial Section ------------*/
