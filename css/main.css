@@ -83,19 +83,25 @@ input, textarea {
 h2 {
    font-size: 2em;
    font-weight: 600;
-   line-height: 1.769em;
+   line-height: 1.6em;
 }
 
 h3 {
    font-size: 1.223em;
-   font-weight: 600;
-   line-height: 1.076em;
+   font-weight: 500;
+   line-height: 1.37em;
+}
+
+h4 {
+   font-size: 1.1em;
+   font-weight: 400;
+   line-height: 1.3em;
 }
 
 p {
    font-size: 1em;
    font-weight: 400;
-   line-height: 1em;
+   line-height: 1.45em;
    letter-spacing: 1px;
 }
 
@@ -112,6 +118,21 @@ p {
    padding: 1em;
    margin: 1em;
  }
+
+   .container {
+      padding: 1em;
+      margin: 1em;
+   }
+
+   .seperator {
+      border: none;          
+      height: 3px;           
+      background-color: #FFF;
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+   
 
 /*------------ End Build a Box ------------*/
 
@@ -321,24 +342,17 @@ p {
       margin: 0;
    }
 
-   .calendar-content {
-      padding: 1em;
-      margin: 1em;
-   }
-
    #welcome-text {
       line-height: 25px;
    }
 
 
    #join-us h2 {
-      line-height: 50px;
       margin-top: 8px;
       margin-bottom: 30px;
    }
 
    #join-us h4 {
-      font-weight:600;
       margin-top: 9px;
    }
 
@@ -351,7 +365,7 @@ p {
       margin-bottom: 20px;
    }
 
-   .calendar-content .event-info {
+   .container .event-info {
       margin-top: 0px;
    }
 
@@ -361,7 +375,6 @@ p {
    }
 
    .event-info p {
-      line-height: 28px;
       margin-bottom: 15px;
    }
 
@@ -396,27 +409,16 @@ p {
       margin: 1em;
    }
 
-   .map-info h3 {
-      font-weight: 500;
-   }
-
    #itinerary h2 {
-      line-height: 40px;
       margin-bottom: 30px;
    }
 
    #itinerary h3 {
-      font-weight: 600;
       margin-bottom: 10px;
    }
 
    #itinerary p {
       margin-bottom: 20px;
-      line-height: 25px;
-   }
-
-   .map-content h4 {
-      font-weight: 400;
    }
 
 /*-------------- End Map Section --------------*/
@@ -445,24 +447,17 @@ p {
       margin: 0;
    }
 
-   .video-content {
-      padding: 1em;
-      margin: 1em;
-   }
-
    #video-box {
       margin-bottom: 30px;
    }
 
-   .video-content h3 {
-      font-weight: 600;
+   .container h3 {
       margin-bottom: 15px;
-      line-height: 30px;
+
    }
 
-   .video-content p {
+   .container p {
       margin-bottom: 10px;
-      line-height: 30px;
    }
 
    #learn-more-button {
@@ -491,12 +486,7 @@ p {
    }
 
    .showcase h4{
-      font-weight: 500;
       margin-bottom: 20px;
-   }
-
-   .showcase h2{
-      line-height: 40px;
    }
 
    #showcase-puzzle {
@@ -521,7 +511,7 @@ p {
    .testimonials {
       background-color: #E2231A;
       width: 100%;
-      padding-top: 50px;
+      padding-top: 30px;
       padding-bottom: 40px;
       margin-left: 0;
       margin-bottom: 50px;
@@ -530,6 +520,25 @@ p {
       border-top-right-radius: 0px;
    }
 
+   .testimonials h4 {
+      text-align: end;
+      margin-bottom: 25px;
+   }
+
+   .testimonials h3 {
+      margin-top: 0;
+      
+      padding: 0;
+      text-align: end;
+   }
+
+   #slider h3{
+      text-align: center;
+   }
+
+   #slider-buttons h3 {
+      text-align: center;
+   }
    
 
 /*------------ End Testimonial Section ------------*/
