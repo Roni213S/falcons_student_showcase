@@ -439,7 +439,11 @@ p {
       
       #enter-button {
          background-color: rgba(226, 35, 26, 0.8);
-         
+         cursor: pointer;
+      }
+
+      #enter-button:hover {
+         background-color: rgba(226, 35, 26, 0.7);
       }
 
    /*-------------- End Hero Text --------------*/
@@ -609,6 +613,7 @@ p {
       padding: 0;
       border: 0;
       background-color: transparent;
+      cursor: pointer;
    }
    
    .fa, .fa-solid {
@@ -764,6 +769,7 @@ p {
    border-radius: 28px;
    padding: 0.4em 1.5em; 
    margin-top: 20px;
+   cursor: pointer;
 }
 
 /*-------------- End Video Section --------------*/
@@ -862,7 +868,7 @@ p {
    }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 47.99em) {
    .puzzle-wrapper {
       max-width: 350px;
       gap: 0.3em;
@@ -957,6 +963,13 @@ p {
       border-top-right-radius: 0px;
    }
 
+   .testimonials .container{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 0px;
+      
+   }
+
    .testimonials h4 {
       text-align: end;
       margin-bottom: 25px;
@@ -967,6 +980,11 @@ p {
       
       padding: 0;
       text-align: end;
+   }
+
+   #slider {
+      margin-top: 50px;
+      margin-bottom: 10px;
    }
 
    #slider h3{
@@ -1002,6 +1020,7 @@ p {
       border-radius: 28px;
       padding: 0.4em 1.5em; 
       width: fit-content;
+      cursor: pointer;
    }
 
 
@@ -1127,7 +1146,7 @@ p {
       
       /* For Mobile Footer */
 
-      @media (max-width:700px){
+      @media (max-width:47.99em){
          
          .footer-left, .footer-right{ 
             float:none; 
