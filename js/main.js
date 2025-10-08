@@ -229,3 +229,57 @@ let students = {
     }
 };
 
+
+// Image Carousel
+const carouselcon = document.querySelector("#carousel-con");
+
+const carousel = [
+    { image: "images/presentation.jpg", alt: "Student presentation" },
+    { image: "images/classwork.jpg", alt: "Students in a computer lab" },
+    { image: "images/groupPhoto.jpg", alt: "A group photo of students" }
+];
+
+let carouselCount = 0;
+    const carouselPrevious = document.querySelector("#carousel-previous");
+    const carouselNext = document.querySelector("#carousel-next");
+
+function displayCarousel() {
+    
+    const carouseldiv = document.createElement("div");
+    carouseldiv.className = ("one-item sm-one-item md-one-item lg-one-item container");
+    const carouselimage = document.createElement("img");
+
+    carouselimage.src = carousel[carouselCount].image;
+    carouselimage.alt = carousel[carouselCount].alt;
+
+    carouselcon.innerHTML = "";
+
+    carouseldiv.appendChild(carouselimage);
+    carouselcon.appendChild(carouseldiv);
+
+}
+
+function nextCarousel() {
+    carouselCount++;
+    if (carouselCount >= carousel.length) {
+        carouselCount = 0;
+    }
+    displayCarousel();
+}
+
+function previousCarousel() {
+    carouselCount--;
+    if (carouselCount < 0) {
+        carouselCount = carousel.length-1;
+    }
+    displayCarousel();
+}
+
+// Display the first carousel immediately
+console.log("Loading:", carousel[carouselCount].image);
+displayCarousel();
+
+// const testtimer = setInterval(nextCarousel, 5000);
+
+carouselNext.addEventListener("click", nextCarousel);
+carouselPrevious.addEventListener("click", previousCarousel);
