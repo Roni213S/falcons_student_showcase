@@ -7,25 +7,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
-    <link href="css/grid.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <title>Fanshawe's Industry Night 2026</title>
 </head>
 
 <body class="site">
-    <h1 class="hidden">Optimized Grid</h1>
+    <h1 class="hidden">Industry Night Site</h1>
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-    <header class="head">
-       <nav id="sticky-nav-con">
-            <div class="nav-container">
-                <ul>
-                    <li>Logo</li>
-                    <li>Menu</li>
+    
+    <div id="sticky-nav-con">
+    <header class="head grid-con">
+        <div class="logo col-span-full m-col-start-1 m-col-end-4" id="logo">
+            <img src="images/FANSHAWELOGOWHITE.svg" alt="Fanshawe Logo">
+        </div>
+        
+        <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11 nav-right">
+            <h2 class="hidden">Main Navigation</h2>
+            
+            <!-- Hamburger button (mobile/tablet) -->
+             <button class="burger-btn" aria-label="Toggle navigation" aria-controls="burger-con" aria-expanded="false">
+                <img src="images/HamburgerMenu.png" alt="Menu">
+            </button>
+            
+            <!-- Nav Bar -->
+             <div id="burger-con" class="menu-panel">
+                <ul class="menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Exhibit</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Portfolio</a></li>
                 </ul>
             </div>
-       </nav>
+        </nav>
     </header>
+</div>
 
     <main id="content" class="main">
         <section class="hero">
@@ -96,11 +116,42 @@
             </div>
         </section>
 
+        <!-- Video Player -->
         <section class="video-section">
             <h2 class="hidden">Video and Creator Showcase</h2>
-            <div class="one-item sm-one-item md-one-item lg-one-item container" id="video-box">
-                <div class="white-text"><h2>*Video Goes Here*</h2></div>
+            
+        <!-- Video Intro / Title -->
+         <section class="one-item sm-one-item md-one-item lg-one-item container" id="video-box">
+            <h3 class="hidden">*Video Goes Here*</h3>
+        </section>
+        
+        <!-- Video Player -->
+        <div class="full" style="display: flex; justify-content: center; padding: 0 1em;">
+            <div id="player-container">
+            <video preload="metadata" poster="images/VideoPlaceholder.png" playsinline>
+                <source src="video/IndustrySiteVideo.mp4" type="video/mp4">
+                <source src="video/IndustrySiteVideo.webm" type="video/webm">
+                <p>You are using an older browser that does not support HTML5 Video. Please update your browser.</p>
+            </video>
+            <div class="video-controls hidden" id="video-controls">
+                <button id="play-button">
+                    <i class="fa fa-play-circle-o"></i>
+                </button>
+                <button id="pause-button">
+                    <i class="fa fa-pause-circle-o"></i>
+                </button>
+                <button id="stop-button">
+                    <i class="fa fa-stop-circle-o"></i>
+                </button>
+                <i class="fa fa-volume-up"></i>
+                <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+                <button id="full-screen">
+                    <i class="fa fa-arrows-alt"></i>
+                </button>
             </div>
+        </div>
+    </div>
+
             <div class="one-item sm-one-item md-one-item lg-one-item container">
                 <h3 class="white-text">Level 4 Student Project<br> Showcase - Lorem Ipsum</h3>
                 <p class="white-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
@@ -115,16 +166,38 @@
                 </div>
             </div>
             <div class="three-items sm-three-items md-three-items lg-three-items" id="showcase-puzzle">
-                <div class="box-model">Box 1</div>
-                <div class="box-model">Box 2</div>
-                <div class="box-model">Box 3</div>
-                <div class="box-model">Box 4</div>
-                <div class="box-model">Box 5</div>
-                <div class="box-model">Box 6</div>
-                <div class="box-model">Box 7</div>
-                <div class="box-model">Box 8</div>
-                <div class="box-model">Box 9</div>
+            <div class="puzzle-wrapper">
+                <div class="puzzle-piece red p-top-left">
+                    <h4 class="white-text">Roni Soud</h4>
+                </div>
+                <div class="puzzle-piece light p-top-center">
+                    <span class="icon">📷</span>
+                </div>
+                <div class="puzzle-piece dark p-top-right">
+                    <h4 class="white-text">Yi Lu</h4>
+                </div>
+                
+                <div class="puzzle-piece dark p-mid-left">
+                    <span class="icon">📷</span>
+                </div>
+                <div class="puzzle-piece red p-center">
+                    <div class="fanshawe-logo"></div>
+                    <h4 class="white-text">CREATOR<br>SPOTLIGHT</h4>
+                </div>
+                <div class="puzzle-piece light p-mid-right">
+                    <span class="icon">📷</span>
+                </div>
+                <div class="puzzle-piece light p-bottom-left">
+                    <h4>Syd<br>Bandarra</h4>
+                </div>
+                <div class="puzzle-piece red p-bottom-center">
+                    <span class="icon white">📷</span>
+                </div>
+                <div class="puzzle-piece dark p-bottom-right">
+                    <h4 class="white-text">Justine Ng</h4>
+                </div>
             </div>
+        </div>
         </section>
 
 
@@ -201,25 +274,48 @@
         </section>
     </main>
 
+    <!-- Footer  -->
     <footer class="main-footer">
         <h2 class="hidden">Footer</h2>
-        <div class="one-item sm-half-left md-half-left lg-half-left container">
-            <img src="#" alt="Fanshawe Logo">
-        </div>
-        <div class="one-item sm-half-left md-half-left lg-half-left container">
-            <p>Fanshawe College, IDP3 <br> © 2025 All Rights Reserved.</p>
-            <p>137 Dundas St. <br> London, ON N6A 1E9</p>
-        </div>
-        <div id="footer-gap"> </div>
-        <div class="one-item sm-half-left md-half-left lg-half-left container small-font">
-            <p>Be part of the bigger picture <br> follow our journey online.</p>
-        </div>
-        <div class="one-item sm-half-left md-half-left lg-half-left container">
-            <img src="#" alt="Logo Images">
-        </div>
-        <div class="one-item sm-half-left md-half-left lg-half-left container small-font">
-            <p>Proudly Designed and Created by Team Falcon.</p>
+        
+        <div class="footer-inner">
+            <div class="footer-left">
+                <img src="images/Fnashawe_Gray.png" alt="Fanshawe Logo" class="footer-logo">
+                
+                <p>Fanshawe College, IDP3<br>© 2025 All Rights Reserved.</p>
+                <p>137 Dundas St.<br>London, ON N6A 1E9</p>
+                
+                <p>
+                    <a href="#">Contact Us</a><br>
+                    <a href="#">Location</a>
+                </p>
+            </div>
+            
+            <div class="footer-right">
+
+            </div>
+            
+            <div class="clear">
+
+            </div>
+
+            <div class="footer-tagline">
+                <p>Be part of the bigger picture, follow our journey online.</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            </div>
+            
+            <div class="footer-credits">
+                <p>Proudly Designed and Created by Team Falcon.</p>
+            </div>
         </div>
     </footer>
+
+     <script src="js/main.js"></script>
 </body>
 </html>
