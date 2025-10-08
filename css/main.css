@@ -118,11 +118,12 @@ p {
 
 /*------------ Build a Box ------------*/
 
- .box-model {
-   background: rgb(211, 211, 211);
-   padding: 1em;
-   margin: 1em;
- }
+   .box-model {
+      background: rgb(211, 211, 211);
+      padding: 1em;
+      margin: 1em;
+      text-align: center;
+   }
 
    .container {
       padding: 1em;
@@ -1146,6 +1147,17 @@ p {
    }
 
 
+
+   #carousel-con {
+      display: contents;
+   }
+
+   #carousel-buttons .fa {
+      color: #E2231A;
+      margin-bottom: 40px;
+   }
+
+
 /*------------ End Gallery  ------------*/
 
 
@@ -1172,7 +1184,7 @@ p {
    }
 
 
-/*------------ End Gallery  ------------*/
+/*------------ End Portfolio  ------------*/
 
 
 /* _____________________________________
