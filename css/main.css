@@ -1180,117 +1180,137 @@ p {
    11. Footer
    _____________________________________ */
 
-    .main-footer{
-      background:#fff;
-      border-radius:28px 28px 0 0;
-      color:#333;
-      padding:20px 16px;
-      font-family:"Montserrat", Arial, sans-serif;
-   }
+.main-footer {
+      background: #fff;
+      border-radius: 28px 28px 0 0;
+      color: #333;
+      padding: 20px 16px;
+      font-family: "Montserrat", Arial, sans-serif;
+      position: relative;
+      overflow: hidden; 
+}
+
+.main-footer::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-image: url("../images/Fanshawe_School_Graphic_1200.webp");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.1;
+   z-index: 0;
+}
+
+.footer-inner {
+   width:100%;
+   max-width:960px;
+   margin:0 auto;
+   position: relative;
+   z-index: 1;
+}
+
+.footer-left { 
+   float:left; 
+   width:50%; 
+   text-align:left; 
+   position: relative;
+   z-index: 2;
+}
+
+.footer-right {
+   float: right;
+   width: 50%;
+   text-align: right;
+   min-height: 260px;
+   margin-top: 4px;
+   position: relative;
+   z-index: 1;
+}
+
+.clear { 
+   clear:both;
+}
+
+.footer-logo {
+   width:120px;
+   height:auto;
+   display:block;
+   margin:0 0 16px 0;
+}
+
+.footer-left p { 
+   margin:12px 0; 
+   line-height:1.5; 
+}
+
+.footer-links a {
+   display:inline-block;
+   margin:6px 0;
+   font-weight:600;
+   color:#333;            
+   text-decoration:none;
+}
+
+.footer-links a:hover { 
+   color:#E2231A;  
+}
+
+.footer-tagline, .social-links, .footer-credits {
+   text-align:center;
+   margin:16px auto 10px;
+   clear: both;
+   position: relative;
+   z-index: 3;
+}
+
+.small-font { 
+   font-size:0.9em; 
+   color:#646469; 
+}
+
+.social-links a {
+   color:#9a9a9a;
+   font-size:28px;
+   margin:0 10px;
+   text-decoration:none;
+}
+
+.social-links a:hover { 
+   color: #e2231a; 
+}
+
+/* For Mobile Footer */
+
+@media (max-width:47.99em) {
    
-   .footer-inner{
+   .footer-left, .footer-right{ 
+      float:none; 
       width:100%;
-      max-width:960px;
-      margin:0 auto;
    }
    
-   .footer-left{ 
-      float:left; 
-      width:50%; 
+   .footer-left { 
       text-align:left; 
-   }
-
-   .footer-right{ 
-      float:right; 
-      width:50%; 
-      text-align:right; 
-   }
-
-    .clear{ 
-      clear:both; 
-   }
-
-    .footer-logo{
-      width:120px;   /* adjust if needed, but it stays fixed */
-      height:auto;
-      display:block;
-      margin:0 0 16px 0;
-   }
-
-    .footer-left p{ 
-      margin:12px 0; 
-      line-height:1.5; 
+      padding-left:16px; 
    }
    
-   .footer-links a{
-      display:inline-block;
-      margin:6px 0;
-      font-weight:600;
-      color:#333;            
-      text-decoration:none;
+   .footer-right {
+      min-height:200px;
+      margin-top:12px;
+   }
+
+   .main-footer::before {
+      background-position: center top;
+      background-size: 110% auto;
    }
    
-   .footer-links a:hover { 
-      color:#E2231A;  
-      
-      .footer-right {
-         min-height:260px;           
-         background-image:url("../images/Fanshawe_School_Graphic_1200.webp"); 
-         background-repeat:no-repeat;
-         background-position:right center;
-         background-size:125% auto;
-         margin-top: 4px;   
-      }
-      
-      .footer-tagline,
-      .social-links,
-      .footer-credits{
-         text-align:center;
-         margin:16px auto 10px;
-      }
-      
-      .small-font{ 
-         font-size:0.9em; 
-         color:#646469; 
-      }
-      
-      .social-links a{
-         color:#9a9a9a;
-         font-size:28px;
-         margin:0 10px;
-         text-decoration:none;
-      }
-      
-      .social-links a:hover{ 
-         color: #e2231a; 
-      }
+   .social-links {
+      margin-top: 14px;
    }
-      
-      /* For Mobile Footer */
-
-      @media (max-width:47.99em){
-         
-         .footer-left, .footer-right{ 
-            float:none; 
-            width:100%;
-         }
-         
-         .footer-left{ 
-            text-align:left; 
-            padding-left:16px; 
-         }
-         
-         .footer-right{
-            min-height:200px;
-            background-position:center top;
-            background-size:110% auto;
-            margin-top:12px;
-         }
-         
-         .social-links {
-            margin-top: 14px;
-         }
-      }
+}
 
 /*------------ End Footer ------------*/
 
