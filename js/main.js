@@ -125,109 +125,59 @@ displayTestimonial();
 next.addEventListener("click", nextTestimonial);
 previous.addEventListener("click", previousTestimonial);
 
-// Portfolio Student Info Array
-let students = {
-    Sheldon_Gohetia: {
-        name: 'Sheldon Gohetia',
-        link: 'https://sheldongohetia.com/',
-        role: 'Graphic Designer and Front End Web Developer'
-    },
-    Qiao_Yi_Chu: {
-        name: 'Qiao-Yi Chu',
-        link: 'https://joychudesign.com/',
-        role: 'Graphic Designer'
-    },
-    King_Yin_Sham: {
-        name: 'King Yin Sham',
-        link: 'https://www.sky-connie.com/index.php',
-        role: 'Graphic and Motion Designer, PM'
-    },
-    Ali_El_Maniary: {
-        name: 'Ali El Maniary',
-        link: 'https://alielmaniary.com/',
-        role: 'Graphic and Motion Designer, Front-End Developer'
-    },
-    Thi_Thanh_Thuong_Nguyen: {
-        name: 'Thi Thanh Thuong Nguyen',
-        link: 'https://annanguyent.com/',
-        role: 'Graphic Designer and Developer'
-    },
-    Jenifer_Q_Evangelista: {
-        name: 'Jenifer Q. Evangelista',
-        link: 'https://jeniferquelali.com/',
-        role: 'Graphic Designer and Developer'
-    },
-    Het_Shah: {
-        name: 'Het Shah',
-        link: 'https://shahhet.ca/',
-        role: 'Graphic and Motion Designer'
-    },
-    Carlos_Menendes: {
-        name: 'Carlos Menendes',
-        link: 'https://carloscano.ca/',
-        role: 'Graphic and Motion Designer, Front-End Developer'
-    },
-    Henrique_Gamborgi: {
-        name: 'Henrique Gamborgi',
-        link: 'https://henriquegamborgi.com/',
-        role: 'Graphic Designer, PM and Front-End Developer'
-    },
-    Keith_Lie: {
-        name: 'Keith Lie',
-        link: 'https://keithliecreative.com/',
-        role: 'Graphic and Motion Designer, Front-End Developer'
-    },
-    Meghan_Damen: {
-        name: 'Meghan Damen',
-        link: 'https://maggiewest.ca/',
-        role: 'Graphic and Motion Designer'
-    },
-    Bernardo_Jr_Macapagal: {
-        name: 'Bernardo Jr. Macapagal',
-        link: 'https://bmjrdesigns.com/',
-        role: 'Graphic and Motion Designer, PM and Front-End Developer'
-    },
-    Tanya_Mae_Huertas: {
-        name: 'Tanya Mae Huertas',
-        link: 'https://heytanyadesigns.com/',
-        role: 'Graphic and Motion Designer, Front-End Developer'
-    },
-    Kirk_Caspe: {
-        name: 'Kirk Caspe',
-        link: 'https://kirkcaspe.ca/',
-        role: 'Graphic and Motion Designer'
-    },
-    Cassidy_Pelacek: {
-        name: 'Cassidy Pelacek',
-        link: 'https://cassidentity.ca/',
-        role: 'Graphic Designer and Developer'
-    },
-    Emmanuel_Opadele: {
-        name: 'Emmanuel Opadele',
-        link: 'https://emmanuelopadele.com/',
-        role: 'Graphic and Motion Designer, PM and Developer'
-    },
-    Bozhi_Zhang: {
-        name: 'Bozhi Zhang',
-        link: 'https://owenz724.com/',
-        role: 'Graphic and Motion Designer'
-    },
-    Alisher_Yantizhanov: {
-        name: 'Alisher Yantizhanov',
-        link: 'https://alishdesign.com/',
-        role: 'Graphic Designer and Front-End Developer'
-    },
-    Kyuri_Park: {
-        name: 'Kyuri Park',
-        link: 'https://kyurihailiepark.ca/',
-        role: 'Graphic Designer, PM and Front-End Developer'
-    },
-    Loi_Pan_Sit: {
-        name: 'Loi Pan Sit',
-        link: 'https://www.lpsdesigns.com/',
-        role: 'Graphic and Motion Designer'
-    }
-};
+//Portfolio
+
+const portfolioCon = document.querySelector(".lightbox-grid");
+
+const portfolios = [
+  { name: "Sheldon Gohetia", pLink: "sheldongohetia.com" },
+  { name: "Qiao-Yi Chu", pLink: "joychudesign.com" },
+  { name: "King Yin Sham", pLink: "www.sky-connie.com/index.php" },
+  { name: "Ali El Maniary", pLink: "alielmaniary.com" },
+  { name: "Thi Thanh Thuong Nguyen", pLink: "annanguyent.com" },
+  { name: "Jenifer Q. Evangelista", pLink: "jeniferquelali.com" },
+  { name: "Het Shah", pLink: "shahhet.ca" },
+  { name: "Carlos Menendes", pLink: "carloscano.ca" },
+  { name: "Henrique Gamborgi", pLink: "henriquegamborgi.com" },
+  { name: "Keith Lie", pLink: "keithliecreative.com" },
+  { name: "Meghan Damen", pLink: "maggiewest.ca" },
+  { name: "Bernardo Jr. Macapagal", pLink: "bmjrdesigns.com" },
+  { name: "Tanya Mae Huertas", pLink: "heytanyadesigns.com" },
+  { name: "Kirk Caspe", pLink: "kirkcaspe.ca" },
+  { name: "Cassidy Pelacek", pLink: "cassidentity.ca" },
+  { name: "Emmanuel Opadele", pLink: "emmanuelopadele.com" },
+  { name: "Bozhi Zhang", pLink: "owenz724.com" },
+  { name: "Alisher Yantizhanov", pLink: "alishdesign.com" },
+  { name: "Kyuri Park", pLink: "kyurihailiepark.ca" },
+  { name: "Loi Pan Sit", pLink: "www.lpsdesigns.com" }
+];
+
+if (portfolioCon) {
+  portfolios.forEach(function (portfolio, i) {
+    const item = document.createElement("div");
+    item.classList.add("lightbox-item");
+    if (i >= 4) item.classList.add("desktop-only"); 
+
+    const box = document.createElement("div");
+    box.classList.add("box");
+    const icon = document.createElement("i");
+    icon.classList.add("fa", "fa-camera");
+    box.appendChild(icon);
+
+    const portfolioName = document.createElement("h3");
+    portfolioName.textContent = portfolio.name;
+
+    const portfolioLink = document.createElement("a");
+    portfolioLink.href = `https://${portfolio.pLink}`;
+    portfolioLink.target = "_blank";
+    portfolioLink.textContent = portfolio.pLink;
+
+    item.appendChild(box);
+    item.appendChild(portfolioName);
+    item.appendChild(portfolioLink);
+    portfolioCon.appendChild(item);
+  });
+}
 
 
 // Image Carousel
