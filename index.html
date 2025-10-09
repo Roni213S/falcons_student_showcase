@@ -257,29 +257,63 @@
                 <p id="see-more-button">SEE MORE</p>
             </div>
         </section>
-
-
-        <section class="portfolio">
+        
+        <!-- Portfolio Section-->
+        <section id="portfolio" class="portfolio">
             <h2 class="hidden">Student Projects and Portfolios</h2>
+            
             <div class="one-item sm-one-item md-one-item lg-one-item container">
-                <h3 class="white-text">It's All About the Students</h3> 
+                <h3 class="white-text">It's All About the Students</h3>
                 <div class="seperator"></div>
-                <p class="white-text">Explore a gallery of projects from the current class of designers and developers</p>
+                <p class="white-text">Explore a gallery of projects from the designers and developers of this school term.</p>
             </div>
-
-            <div class="one-item sm-one-item md-one-item lg-one-item container">
-                <h4 class="white-text">*Search Bar Here!*</h4>
+            
+            <div class="one-item sm-one-item md-one-item lg-one-item container portfolio-search">
+                <label for="portfolio-query" class="hidden">Search Student Directory</label>
+                <div class="search-row">
+                    <div class="search-input">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input id="portfolio-query" type="search" placeholder="Search for students here…" aria-label="Search student directory">
+                    </div>
+                    <button type="button" class="search-go">GO</button>
+                </div>
             </div>
-            <div class="two-items sm-two-items md-two-items lg-two-items">
-                <div class="box-model">Project Manager</div>
-                <div class="box-model">Motion Design</div>
+            
+            <div class="container">
+                <div class="portfolio-categories">
+                    <a class="category-card white" href="#pm-overlay">
+                        <div class="card-label">PROJECT<br>MANAGEMENT</div>
+                    </a>
+                    
+                    <div class="category-card light">
+                        <div class="card-label">MOTION<br>DESIGN</div>
+                    </div>
+                    
+                    <div class="category-card white">
+                        <div class="card-label">WEB<br>DEVELOPMENT</div>
+                    </div>
+                    
+                    <div class="category-card light">
+                        <div class="card-label">GRAPHIC<br>DESIGN</div>
+                    </div>
+                </div>
             </div>
-            <div class="two-items sm-two-items md-two-items lg-two-items">
-                <div class="box-model">Web Developer</div>
-                <div class="box-model">Graphic Design</div>
+            
+            <!-- Light Box Portfolio Student List-->
+            <div id="portfolio-con" class="container">
+            <div id="pm-overlay" class="portfolio-lightbox" role="dialog" aria-modal="true">
+                <div class="lightbox-card">
+                    <a href="#portfolio" class="close" aria-label="Close">×</a>
+                    <h3>Project Management</h3>
+                    <p class="panel-sub">Explore a gallery of projects from the designers and developers of this term.</p>
+                    <div class="panel-line"></div>
+                    <div class="lightbox-grid"></div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</section>
+        
 
     <!-- Footer  -->
     <footer class="main-footer">
