@@ -764,7 +764,7 @@ p {
       margin: 0;
    }
 
-   #learn-more-button {
+   .learn-more-button {
       display: table;
       margin-right: auto;
       background-color: #FFF;
