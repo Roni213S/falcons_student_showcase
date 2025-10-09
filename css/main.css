@@ -196,7 +196,7 @@ p {
       display: block;
    }
    
-   @media (min-width: 768px) {
+   @media (min-width: 48rem) {
       #logo img {
          max-width: 160px; 
       }
@@ -764,7 +764,7 @@ p {
       margin: 0;
    }
 
-   .learn-more-button {
+   .learn-more-button a {
       display: table;
       margin-right: auto;
       background-color: #FFF;
@@ -965,7 +965,7 @@ p {
    }
 
    /* Desktop layout: placeholder box on left */
-   @media (min-width: 900px) {
+   @media (min-width: 64rem) {
       #testimonial-con {
          display: grid;
          grid-template-columns: 220px 1fr; /* box | text */
@@ -1034,7 +1034,7 @@ p {
 
 /* For Desktop */
 
-   @media (min-width: 900px) {
+   @media (min-width: 64rem) {
 
       #testimonial-con {
          display: grid;
@@ -1200,7 +1200,7 @@ p {
   color: #ffffff;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
 
   .featured-intro { 
    margin-bottom: 28px; 
@@ -1260,6 +1260,7 @@ p {
       outline: 0;
       background: transparent;
       color: #333;
+      transform: translateY(20%);
    }
    
    .portfolio-search .search-go {
@@ -1267,7 +1268,7 @@ p {
       border-radius: 999px;
       background: #fff;
       color: #E2231A;
-      padding: 10px 18px;
+      padding: 22px 32px;
       font-weight: 700;
       cursor: pointer;
    }
@@ -1403,7 +1404,7 @@ p {
    
    /* Desktop */
    
-   @media (min-width: 1024px) {
+   @media (min-width: 64rem) {
       
       .portfolio-categories {
          grid-template-columns: repeat(4, minmax(0, 1fr)); 
@@ -1539,7 +1540,7 @@ p {
 
 /* For Mobile Footer */
 
-@media (max-width:48rem) {
+@media (min-width:48rem) {
    
    .footer-left, .footer-right{ 
       float:none; 
