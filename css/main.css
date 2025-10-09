@@ -1147,16 +1147,36 @@ p {
    }
 
 
+   /*------------ Image Carousel  ------------*/
 
    #carousel-con {
       display: contents;
    }
 
-   #carousel-buttons .fa {
-      color: #E2231A;
-      margin-bottom: 40px;
+   #carousel-con img {
+      border-radius: 12px;
+      overflow: hidden;
    }
 
+   #carousel-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      margin-top: 0rem;
+   }
+
+   #carousel-buttons .fa {
+      color: #E2231A;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      cursor: pointer;
+   }
+
+   #carousel-buttons .fa:hover {
+      color: #d91409;
+   }
+
+   /*------------ End Image Carousel  ------------*/
 
 /*------------ End Gallery  ------------*/
 
