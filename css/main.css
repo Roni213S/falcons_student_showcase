@@ -157,8 +157,9 @@ p {
    07. Creator 
    08. Testimonials
    09. Gallery
-   10. Portfolio
-   11. Footer
+   10. Student Featured Work
+   11. Portfolio
+   12. Footer
 
 /* _____________________________________
 
@@ -1166,11 +1167,80 @@ p {
 
 /*------------ End Gallery  ------------*/
 
+/* _____________________________________
+
+   10. Student Featured Work
+   _____________________________________ */
+
+.featured-section { 
+   background:#fff; 
+   color:#000; 
+   border-radius:28px; 
+   padding:48px 24px;
+   margin: 40px 0;
+}
+
+.featured-section .seperator { 
+   background:#e1e1e1; 
+   height:3px; 
+   border-radius:2px; 
+   margin:10px 0 16px; 
+}
+
+.featured-section h3 {
+  margin-bottom: 12px; 
+}
+
+.featured-section .small-font {
+  margin-top: 8px;
+  margin-bottom: 28px;  
+}
+
+.featured-intro { 
+  margin-bottom: 24px;              
+}
+
+.featured-grid .portfolio-categories {
+  margin-top: 20px; 
+  gap: 24px;                        
+}
+
+.category-card.red {
+  background-color: #E2231A; 
+  color: #ffffff;            
+}
+
+.category-card.red .card-label {
+  color: #ffffff;
+}
+
+.category-card.gray {
+  background-color: #646469; 
+  color: #ffffff;          
+}
+
+.category-card.gray .card-label {
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+
+  .featured-intro { 
+   margin-bottom: 28px; 
+}
+
+  .featured-grid .portfolio-categories { 
+   gap: 32px; 
+}
+}
+
+/*------------ End Student Featured Work  ------------*/
+
 
 
 /* _____________________________________
 
-   10. Portfolio 
+   11. Portfolio 
    _____________________________________ */
 
 
@@ -1195,7 +1265,7 @@ p {
 
 /* _____________________________________
 
-   11. Footer
+   12. Footer
    _____________________________________ */
 
     .main-footer{
