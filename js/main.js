@@ -76,7 +76,54 @@ videoControls.addEventListener("mouseleave", hideControls);
 player.addEventListener("mouseenter", showControls);
 player.addEventListener("mouseleave", hideControls);
 
+// Testimonials and Portfolio 
 
+const testimonials = [
+  { name: "Marco Deluca", position: "IDP Program Coordinator and Professor at Fanshawe College", testimonial: "Utilizing a diverse range of media, the Interactive Media Design students have masterfully highlighted the heroic sacrifices made by Indian soldiers in World War I." },
+  { name: "Rob Haaf", position:"IDP Professor at Fanshawe College", testimonial: "It is always rewarding to see the innovation and passion that our students bring to Industry Night. The skills they have developed in the IDP3 program are impressive and set them up for future success." },
+  { name: "Jarrod Osterback", position:"IDP Professor at Fanshawe College", testimonial: "Industry Night is a wonderful opportunity for our students to shine. The projects they present are a testament to their hard work and the real-world skills they've gained throughout our program." }
+];
+
+const testimonialCon = document.querySelector("#testimonial-con");
+const previous = document.querySelector("#previous");
+const next = document.querySelector("#next");
+let count = 0;
+
+// Functions
+
+function displayTestimonial() {
+  const testimonialDiv = document.createElement("div");
+  testimonialDiv.classList.add("col-span-full");
+
+  const testimonialName = document.createElement("h3");
+  const testimonialPosition = document.createElement("h4");
+  const testimonialParagraph = document.createElement("p");
+
+  testimonialName.textContent = testimonials[count].name;
+  testimonialPosition.textContent = testimonials[count].position;
+  testimonialParagraph.textContent = `"${testimonials[count].testimonial}"`;
+
+  testimonialCon.innerHTML = "";
+  testimonialDiv.appendChild(testimonialName);
+  testimonialDiv.appendChild(testimonialPosition);
+  testimonialDiv.appendChild(testimonialParagraph);
+  testimonialCon.appendChild(testimonialDiv);
+}
+
+function nextTestimonial() {
+  count++;
+  if (count >= testimonials.length) count = 0;
+  displayTestimonial();
+}
+function previousTestimonial() {
+  count--;
+  if (count < 0) count = testimonials.length - 1;
+  displayTestimonial();
+}
+
+displayTestimonial();
+next.addEventListener("click", nextTestimonial);
+previous.addEventListener("click", previousTestimonial);
 
 // Portfolio Student Info Array
 let students = {
@@ -182,3 +229,57 @@ let students = {
     }
 };
 
+
+// Image Carousel
+const carouselcon = document.querySelector("#carousel-con");
+
+const carousel = [
+    { image: "images/presentation.jpg", alt: "Student presentation" },
+    { image: "images/classwork.jpg", alt: "Students in a computer lab" },
+    { image: "images/groupPhoto.jpg", alt: "A group photo of students" }
+];
+
+let carouselCount = 0;
+    const carouselPrevious = document.querySelector("#carousel-previous");
+    const carouselNext = document.querySelector("#carousel-next");
+
+function displayCarousel() {
+    
+    const carouseldiv = document.createElement("div");
+    carouseldiv.className = ("one-item sm-one-item md-one-item lg-one-item container");
+    const carouselimage = document.createElement("img");
+
+    carouselimage.src = carousel[carouselCount].image;
+    carouselimage.alt = carousel[carouselCount].alt;
+
+    carouselcon.innerHTML = "";
+
+    carouseldiv.appendChild(carouselimage);
+    carouselcon.appendChild(carouseldiv);
+
+}
+
+function nextCarousel() {
+    carouselCount++;
+    if (carouselCount >= carousel.length) {
+        carouselCount = 0;
+    }
+    displayCarousel();
+}
+
+function previousCarousel() {
+    carouselCount--;
+    if (carouselCount < 0) {
+        carouselCount = carousel.length-1;
+    }
+    displayCarousel();
+}
+
+// Display the first carousel immediately
+console.log("Loading:", carousel[carouselCount].image);
+displayCarousel();
+
+// const testtimer = setInterval(nextCarousel, 5000);
+
+carouselNext.addEventListener("click", nextCarousel);
+carouselPrevious.addEventListener("click", previousCarousel);
