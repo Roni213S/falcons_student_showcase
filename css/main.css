@@ -784,6 +784,7 @@ p {
    .showcase {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       background-color: #e3e3e3;
       border-radius: 28px;
       border-bottom-left-radius: 0px;
@@ -850,6 +851,8 @@ p {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   background: #e3e3e3;
   width: 100%;
   margin: 0;
@@ -857,6 +860,9 @@ p {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -880,11 +886,14 @@ p {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
    .icon {
       font-size: 2em;
       opacity: 0.4;
    }
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 .puzzle-wrapper {
@@ -897,6 +906,9 @@ p {
   aspect-ratio: 1 / 1;
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -911,6 +923,7 @@ p {
   align-items: center;
 }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
    .fanshawe-logo {
@@ -991,6 +1004,8 @@ p {
    }
 }
 =======
+=======
+>>>>>>> Stashed changes
 .puzzle-piece.has-photo {
   padding: 0;              
 }
@@ -1042,6 +1057,7 @@ p {
          gap: .3em; 
       }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 
   .puzzle-piece { 
@@ -1085,6 +1101,30 @@ p {
    }
 }
 =======
+>>>>>>> Stashed changes
+=======
+
+  .puzzle-piece { 
+   padding: 1em .5em; 
+   border-radius: 15px; 
+}
+
+  .puzzle-piece h4 { 
+   font-size: .85em; 
+}
+
+  .puzzle-piece p  {
+    font-size: .7em;
+}
+
+  .puzzle-piece .icon i { 
+   font-size: 1.6em; 
+}
+
+  .fanshawe-logo {
+   font-size: 2em; 
+   }
+}
 >>>>>>> Stashed changes
 
   .puzzle-piece { 
@@ -1180,6 +1220,9 @@ p {
    }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
