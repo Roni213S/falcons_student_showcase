@@ -40,109 +40,6 @@ Accessibility
 	z-index: 100000;
 }
 
-body {
-   margin: 0;
-   padding: 0;
-   color: #646469;
-   font-family:'Montserrat', Arial, sans-serif;
-   animation: bugfix infinite 1s;
-   -webkit-animation: bugfix infinite 1s;
-   font-size: 18px;
-   line-height: 26px;
-   /* Any em and rem will be reflected by this number, making it easy to change everything at once */
-   
-}
-
-h1, h2, h3, h4, p {
-   margin: 0;
-   padding: 0;
-}
-
-a {
-   text-decoration: none;
-}
-
-input, textarea {
-   display: block;
-   margin: 0;
-   padding: 0;
-}
-
-.hidden {
-   display: none;
-}
-
-.grid-con {
-  justify-content: center; 
-}
-
-
-/*------------ Font Options ------------*/
-
-.grey-text { color: #646469 }
-
-.white-text { color: #FFF }
-
-.red-text { color: #E2231A }
-
-h2 {
-   font-size: 2em;
-   font-weight: 600;
-   line-height: 1.6em;
-}
-
-h3 {
-   font-size: 1.223em;
-   font-weight: 500;
-   line-height: 1.37em;
-}
-
-h4 {
-   font-size: 1.1em;
-   font-weight: 400;
-   line-height: 1.3em;
-}
-
-p {
-   font-size: 1em;
-   font-weight: 400;
-   line-height: 1.45em;
-   letter-spacing: 1px;
-}
-
-.small-font {
-   font-size: 0.666em;
-   font-weight: 400;
-   line-height: 1.2em;
-}
-
-/*------------ Build a Box ------------*/
-
-   .box-model {
-      background: rgb(211, 211, 211);
-      padding: 1em;
-      margin: 1em;
-      text-align: center;
-   }
-
-   .container {
-      padding: 1em;
-      margin: 1em;
-   }
-
-   .seperator {
-      border: none;          
-      height: 3px;           
-      background-color: #FFF;
-      margin: 0;
-      margin-top: 10px;
-      margin-bottom: 10px;
-   }
-   
-
-/*------------ End Build a Box ------------*/
-
-
 
 /* ___________________________________________
 
@@ -167,18 +64,48 @@ p {
    01. General Styles
    _____________________________________ */
 
+   body {
+      margin: 0;
+      padding: 0;
+      color: #646469;
+      font-family:'Montserrat', Arial, sans-serif;
+      animation: bugfix infinite 1s;
+      -webkit-animation: bugfix infinite 1s;
+      font-size: 18px;
+      line-height: 26px;
+      /* Any em and rem will be reflected by this number, making it easy to change everything at once */
+   }
+
+   h1, h2, h3, h4, p {
+      margin: 0;
+      padding: 0;
+   }
+
+   a {
+      text-decoration: none;
+   }
+
    img {
       display: block;
       width: 100%;
    }
 
+   .hidden {
+      display: none;
+   }
+
+   .grid-con {
+      justify-content: center; 
+   }
+
    input, textarea {
+      display: block;
+      width: 95%;
       padding: .75em;
+      margin-bottom: 1em;
       border: 1px solid #ccc;
       background-color: #f7f7f7;
-      border-radius: 5px;
-      width: 95%;
-      margin-bottom: 1em;
+      border-radius: 0.3rem;
    }
 
    input[type="submit"] {
@@ -189,18 +116,67 @@ p {
       border: none;
       float: right;
    }
-   
-   #logo img {
-      width: auto;  
-      height: 80px;
-      display: block;
-   }
-   
-   @media (min-width: 48rem) {
-      #logo img {
-         max-width: 160px; 
+
+
+   /*------------ Font Options ------------*/
+
+      .grey-text { color: #646469 }
+
+      .white-text { color: #fff }
+
+      .red-text { color: #e2231a }
+
+      h2 {
+         font-size: 2em;
+         font-weight: 600;
+         line-height: 1.6em;
       }
-   }
+
+      h3 {
+         font-size: 1.223em;
+         font-weight: 500;
+         line-height: 1.37em;
+      }
+
+      h4 {
+         font-size: 1.1em;
+         font-weight: 400;
+         line-height: 1.3em;
+      }
+
+      p {
+         font-size: 1em;
+         font-weight: 400;
+         line-height: 1.45em;
+         letter-spacing: 1px;
+      }
+
+      .small-font {
+         font-size: 0.666em;
+         font-weight: 400;
+         line-height: 1.2em;
+      }
+
+   /*------------ End Font Options ------------*/
+
+   /*------------ Boxes ------------*/
+
+      .container {
+         padding: 1em;
+         margin: 1em;
+      }
+
+      .seperator {
+         border: none;          
+         height: .17rem;           
+         background-color: #fff;
+         margin: 0;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+      
+
+   /*------------ Boxes ------------*/
 
 /*-------------- End General Styles --------------*/
 
@@ -211,15 +187,15 @@ p {
    _____________________________________ */
 
    #sticky-nav-con {
-      background: #E2231A; 
+      background: #e2231a; 
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 72px;
+      height: 4rem;
       z-index: 1000;
       color: #fff;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 .17rem .45rem rgba(0, 0, 0, 0.2);
    }
 
    #sticky-nav-con ul {
@@ -248,6 +224,18 @@ p {
       position: relative;
    }
 
+      #logo img {
+      width: auto;  
+      height: 4.4rem;
+      display: block;
+   }
+   
+   @media (min-width: 48rem) {
+      #logo img {
+         max-width: 8.9rem; 
+      }
+   }
+
 /* Mobile/ Tablet */
 
    .burger-btn {
@@ -273,9 +261,9 @@ p {
    #burger-con {
       position: absolute;
       right: 0;
-      top: 56px;
-      background: #E2231A;
-      width: 220px;
+      top: 3.1rem;
+      background: #e2231a;
+      width: 12rem;
       border: none;
       max-height: 0;            
       overflow: hidden;
@@ -285,7 +273,7 @@ p {
 
    
    #burger-con.open {
-      max-height: 500px;    
+      max-height: 28rem;    
       padding: 12px 16px;    
    }
 
@@ -296,7 +284,7 @@ p {
 
    #burger-con li {
       list-style: none;
-      margin: 8px 0;
+      margin: .5em 0;
    }
 
 /* Desktop */
@@ -390,8 +378,8 @@ p {
          align-items: center;
          text-align: center;
          letter-spacing: 1px;
-         margin-top: 10rem;
-         margin-bottom: 1rem;
+         margin-top: 6rem;
+         margin-bottom: 1.5rem;
       }
 
 
@@ -406,7 +394,7 @@ p {
          margin-bottom: 20px;
          margin-left: auto;
          margin-right: auto;
-         border-radius: 28px;
+         border-radius: 1.5rem;
       }
 
       .hero-text p {
@@ -442,16 +430,16 @@ p {
    _____________________________________ */
 
    .calendar {
-      background-color: #E2231A;
+      background-color: #e2231a;
       width: 100%;
       margin: 0;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       padding-top: 2px;
    }
 
    .calendar #join-us {
       background-color: #e9e9e9;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       width: 100%;
       margin: 0;
    }
@@ -473,8 +461,8 @@ p {
    #join-us p {
       display: table;
       margin-left: auto;
-      background-color: #FFF;
-      border-radius: 28px;
+      background-color: #fff;
+      border-radius: 1.5rem;
       padding: 0.8em 1.5em; 
       margin-bottom: 20px;
    }
@@ -503,18 +491,18 @@ p {
 
 
    .map-info {
-      background-color: #E2231A;
+      background-color: #e2231a;
       width: 100%;
       margin-top: 70px;
       margin-left: 0;
       margin-bottom: 50px;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       padding-bottom: 10px;
    }
 
    #itinerary {
       background-color: #e9e9e9;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       width: 100%;
       margin: 0;
    }
@@ -552,13 +540,13 @@ p {
    _____________________________________ */
 
    .video-section {
-      background-color: #E2231A;
+      background-color: #e2231a;
       width: 100%;
       padding-top: 0px;
       padding-bottom: 0px;
       margin-left: 0;
       margin-bottom: 0px;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
    }
@@ -569,14 +557,14 @@ p {
       max-width: 960px;
       margin: 0 auto;
       border: solid 1px #c81006;
-      border-radius: 20px;
+      border-radius: 1.1rem;
    }
 
    #player-container video {
       display: block;
       width: 100%;
       height: auto;
-      border-radius: 20px;
+      border-radius: 1.1rem;
    }
 
    .video-controls.hidden {
@@ -593,7 +581,7 @@ p {
       display: flex;
       transition: all 0.2s ease-in-out;
       pointer-events: pointer;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       align-items: center;
       justify-content: center;
       gap: 16px;
@@ -653,10 +641,10 @@ p {
    input[type="range"]::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
-      background-color: #E2231A;
+      background-color: #e2231a;
       border-radius: 30px;
-      height: 16px;
-      width: 16px;
+      height: 0.9rem;
+      width: 0.9rem;
       transform: translateY(-28%);
    }
    
@@ -674,7 +662,7 @@ p {
    }
 
    input[type="range"]::-moz-range-thumb {
-      background-color: #E2231A;
+      background-color: #e2231a;
       border: none;
       border-radius: 8px;
       height: 16px;
@@ -683,7 +671,7 @@ p {
    }
    
    input[type="range"]:focus::-moz-range-thumb {
-      outline: 3px solid #FFF;
+      outline: 3px solid #fff;
       outline-offset: 2px;
    }
 
@@ -699,11 +687,11 @@ p {
       }
 
       .fa, .fa-solid {
-         font-size: 32px;
+         font-size: 1.8rem;
       }
 
       input[type="range"] {
-         width: 500px; 
+         width: 28rem; 
       }
       
       input[type="range"]::-webkit-slider-thumb {
@@ -757,8 +745,8 @@ p {
    .learn-more-button a {
       display: table;
       margin-right: auto;
-      background-color: #FFF;
-      border-radius: 28px;
+      background-color: #fff;
+      border-radius: 1.5rem;
       padding: 0.4em 1.5em; 
       margin-top: 20px;
       text-decoration: none;
@@ -779,7 +767,7 @@ p {
 
    .showcase {
       background-color: #e3e3e3;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
       width: 100%;
@@ -792,7 +780,7 @@ p {
 
    #showcase-puzzle {
       background-color: #e3e3e3;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       width: 100%;
@@ -809,7 +797,7 @@ p {
       grid-template-rows: repeat(3, 1fr);
       gap: 0.5em;
       width: 100%;
-      max-width: 480px;
+      max-width: 26rem;
       aspect-ratio: 1;
    }
 
@@ -821,11 +809,11 @@ p {
       align-items: center;
       padding: 1.5em 1em;
       text-align: center;
-      border-radius: 20px;
+      border-radius: 1.1rem;
    }
 
   .puzzle-piece.red {
-      background-color: #E2231A;
+      background-color: #e2231a;
    }
 
    .puzzle-piece.dark {
@@ -907,11 +895,11 @@ p {
    _____________________________________ */
 
    .testimonials {
-      background-color: #E2231A;
+      background-color: #e2231a;
       width: 100%;
       padding: 30px 16px 40px;
       margin: 0 0 50px;
-      border-radius: 28px;
+      border-radius: 1.5rem;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
    }
@@ -967,9 +955,9 @@ p {
       #testimonial-con::before {
          content: "";
          display: block;
-         width: 200px;
-         height: 200px;
-         border-radius: 20px; /* rounded square */
+         width: 11rem;
+         height: 11rem;
+         border-radius: 1.1rem; /* rounded square */
          background: #dcdcdc; /* grey box */
       }
 
@@ -1041,9 +1029,9 @@ p {
       #testimonial-con::before {
          content: "";
          display: block;
-         width: 200px;
-         height: 200px;
-         border-radius: 20px;
+         width: 11rem;
+         height: 11rem;
+         border-radius: 1.1rem;
          background: #dcdcdc;
          justify-self: start;
          position: relative;
@@ -1087,14 +1075,14 @@ p {
       padding-top: 30px;
       padding-bottom: 40px;
       margin-left: 0;
-      border-radius: 28px;
+      border-radius: 1.5rem;
    }
 
    #see-more-button {
       display: block;
       margin: 0 auto;
-      background-color: #FFF;
-      border-radius: 28px;
+      background-color: #fff;
+      border-radius: 1.5rem;
       padding: 0.4em 1.5em; 
       width: fit-content;
       cursor: pointer;
@@ -1115,12 +1103,12 @@ p {
    #carousel-buttons {
       display: flex;
       justify-content: center;
-      gap: 5rem;
+      gap: 3rem;
       margin-top: 0rem;
    }
 
    #carousel-buttons .fa {
-      color: #E2231A;
+      color: #e2231a;
       margin-bottom: 30px;
       font-size: 2rem;
       cursor: pointer;
@@ -1139,70 +1127,68 @@ p {
    10. Student Featured Work
    _____________________________________ */
 
-.featured-section { 
-   background:#fff; 
-   color:#000; 
-   border-radius:28px; 
-   padding:48px 24px;
-   margin: 40px 0;
-}
+   .featured-section { 
+      background:#fff; 
+      color:#000; 
+      border-radius:28px; 
+      padding: 2.5rem 1.3rem;
+      margin: 40px 0;
+   }
 
-.featured-section .seperator { 
-   background:#e1e1e1; 
-   height:3px; 
-   border-radius:2px; 
-   margin:10px 0 16px; 
-}
+   .featured-section .seperator { 
+      background:#e1e1e1; 
+      height: .17rem; 
+      border-radius:2px; 
+      margin:10px 0 16px; 
+   }
 
-.featured-section h3 {
-  margin-bottom: 12px; 
-}
+   .featured-section h3 {
+      margin-bottom: 12px; 
+   }
 
-.featured-section .small-font {
-  margin-top: 8px;
-  margin-bottom: 28px;  
-}
+   .featured-section .small-font {
+      margin-top: 8px;
+      margin-bottom: 28px;  
+   }
 
-.featured-intro { 
-  margin-bottom: 24px;              
-}
+   .featured-intro { 
+      margin-bottom: 24px;              
+   }
 
-.featured-grid .portfolio-categories {
-  margin-top: 20px; 
-  gap: 24px;                        
-}
+   .featured-grid .portfolio-categories {
+      margin-top: 20px; 
+      gap: 24px;                        
+   }
 
-.category-card.red {
-  background-color: #E2231A; 
-  color: #ffffff;            
-}
+   .category-card.red {
+      background-color: #e2231a; 
+      color: #ffffff;            
+   }
 
-.category-card.red .card-label {
-  color: #ffffff;
-}
+   .category-card.red .card-label {
+      color: #ffffff;
+   }
 
-.category-card.gray {
-  background-color: #646469; 
-  color: #ffffff;          
-}
+   .category-card.gray {
+      background-color: #646469; 
+      color: #ffffff;          
+   }
 
-.category-card.gray .card-label {
-  color: #ffffff;
-}
+   .category-card.gray .card-label {
+      color: #ffffff;
+   }
 
-@media (min-width: 64rem) {
+   @media (min-width: 64rem) {
+      .featured-intro { 
+         margin-bottom: 28px; 
+      }
 
-  .featured-intro { 
-   margin-bottom: 28px; 
-}
-
-  .featured-grid .portfolio-categories { 
-   gap: 32px; 
-}
-}
+      .featured-grid .portfolio-categories { 
+         gap: 32px; 
+      }
+   }
 
 /*------------ End Student Featured Work  ------------*/
-
 
 
 /* _____________________________________
@@ -1212,9 +1198,9 @@ p {
 
 
    .portfolio {
-      background: #E2231A;
-      border-radius: 28px;
-      padding: 24px 16px;
+      background: #e2231a;
+      border-radius: 1.5rem;
+      padding: 1.3rem .03rem;
    }
 
    .portfolio .seperator { 
@@ -1257,7 +1243,7 @@ p {
       border: 0;
       border-radius: 999px;
       background: #fff;
-      color: #E2231A;
+      color: #e2231a;
       padding: 22px 32px;
       font-weight: 700;
       cursor: pointer;
@@ -1274,7 +1260,7 @@ p {
       display: grid;
       place-items: center;
       aspect-ratio: 1 / 1;
-      border-radius: 16px;
+      border-radius: .9rem;
       text-align: center;
       text-decoration: none;
       box-shadow: inset 0 0 0 1px #e5e5e5;
@@ -1341,7 +1327,7 @@ p {
    }
    
    .panel-line { 
-      height: 3px; 
+      height: .17rem; 
       background: #e1e1e1; 
       border-radius: 2px; 
       margin: 10px 0 16px; 
@@ -1362,7 +1348,7 @@ p {
    .lightbox-item .box {
       width: 100%;
       aspect-ratio: 1 / 1;
-      border-radius: 16px;
+      border-radius: .9rem;
       background: #f6f6f6;
       box-shadow: inset 0 0 0 1px #e2e2e2;
       display: flex;
@@ -1425,7 +1411,7 @@ p {
    .main-footer {
       background: #fff;
       color: #333;
-      padding: 20px 16px;
+      padding: 1.1rem .9rem;
       position: relative;
       overflow: hidden; 
    }
@@ -1476,9 +1462,9 @@ p {
    }
 
    .footer-logo {
-      width:120px;
-      height:auto;
-      display:block;
+      width: 6.6rem;
+      height: auto;
+      display: block;
       margin:0 0 16px 0;
    }
 
@@ -1496,7 +1482,7 @@ p {
    }
 
    .footer-links a:hover { 
-      color:#E2231A;  
+      color:#e2231a;  
    }
 
    .footer-tagline, .social-links, .footer-credits {
@@ -1525,7 +1511,7 @@ p {
    .fa-instagram:hover,
    .fa-youtube:hover,
    .fa-linkedin:hover {
-      color: #E2231A; 
+      color: #e2231a; 
    }
 
 /* For Mobile Footer */
