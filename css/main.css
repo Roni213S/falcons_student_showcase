@@ -195,7 +195,8 @@ p {
    
    @media (min-width: 48rem) {
       #logo img {
-         max-width: 160px; 
+         height: 100px;
+         max-width: none; 
       }
    }
 
@@ -343,7 +344,7 @@ p {
    _____________________________________ */
 
    .hero {
-      padding-top: 3.3rem;
+      padding-top: 4.5rem;
       margin: 0 0;
    }
 
@@ -870,31 +871,25 @@ p {
          max-width: 350px;
          gap: .3em; 
       }
-
-
-  .puzzle-wrapper { 
-   max-width: 350px; 
-   gap: .3em; 
-}
-
-  .puzzle-piece h4 { 
-   font-size: .85em; 
-}
-
-  .puzzle-piece p  {
-    font-size: .7em;
-}
-  .fanshawe-logo {
-   font-size: 2em; 
+      
+      .puzzle-piece h4 { 
+         font-size: .85em; 
+      }
+      
+      .puzzle-piece p  {
+         font-size: .7em;
+      }
+      
+      .fanshawe-logo {
+         font-size: 2em; 
+      }
    }
-}
 
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .puzzle-wrapper { max-width: 450px; }
   .puzzle-piece h4 { font-size: .95em; }
   .puzzle-piece p  { font-size: .8em; }
-  .puzzle-piece .icon i { font-size: 1.9em; }
 }
 
 @media (min-width: 1024px) {
@@ -902,7 +897,6 @@ p {
   .puzzle-piece { padding: 2em 1.2em; }
   .puzzle-piece h4 { font-size: 1.1em; }
   .puzzle-piece p  { font-size: .9em; }
-  .puzzle-piece .icon i { font-size: 2.2em; }
   .fanshawe-logo { font-size: 3em; }
 }
 
@@ -988,45 +982,6 @@ p {
       }
    }
 
-      #testimonial-con h3 {
-         font-size: 22px;
-         font-weight: 800;
-         color: #fff;       
-         margin: 0 0 8px;
-         text-align: left;
-      }
-
-      #testimonial-con h4 {
-         font-size: 16px;
-         font-weight: 500;
-         font-style: italic; 
-         color: #fff;         
-         margin: 0 0 12px;
-         text-align: left;
-      }
-
-      #testimonial-con p {
-         font-size: 16px;
-         line-height: 1.6;
-         color: #fff;         
-         margin: 0 0 18px;
-         text-align: left;
-      }
-
-      #testimonial-control {
-         display: flex;
-         justify-content: center;
-         gap: 28px;
-         padding: 18px 0 8px;
-      }
-
-      #testimonial-control button {
-         background: transparent;
-         border: none;
-         font-size: 32px;
-         cursor: pointer;
-         color: #fff;
-      }
 
 /* For Desktop */
 
@@ -1052,19 +1007,6 @@ p {
          background: #dcdcdc;
          justify-self: start;
          position: relative;
-      }
-
-      #testimonial-con::after {
-         content: "\f030";                
-         font-family: "Font Awesome 5 Free";
-         font-weight: 900;                 
-         font-size: 40px;                 
-         color: #555;                     
-         position: absolute;
-         top: 50%;
-         left: 110px;                      
-         transform: translate(-50%, -50%); 
-         pointer-events: none;
       }
    }
 
