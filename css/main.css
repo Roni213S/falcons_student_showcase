@@ -142,8 +142,6 @@ p {
 
 /*------------ End Build a Box ------------*/
 
-
-
 /* ___________________________________________
 
        CSS Guide
@@ -160,7 +158,7 @@ p {
    09. Gallery
    10. Student Featured Work
    11. Portfolio
-   12. Footer
+   12. Footer */
 
 /* _____________________________________
 
@@ -592,7 +590,7 @@ p {
       background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
       display: flex;
       transition: all 0.2s ease-in-out;
-      pointer-events: pointer;
+      pointer-events: auto;
       border-radius: 28px;
       align-items: center;
       justify-content: center;
@@ -622,7 +620,6 @@ p {
       
    }
    
-
    /*********** Baseline, reset styles ***********/
    
    input[type="range"] {
@@ -868,8 +865,6 @@ p {
    margin-bottom: .2em; 
 }
 
-
-@media (max-width: 767px) {
    @media screen and (min-width: 48rem) {
       
       .puzzle-wrapper { 
@@ -890,11 +885,6 @@ p {
   .puzzle-piece p  {
     font-size: .7em;
 }
-
-  .puzzle-piece .icon i { 
-   font-size: 1.6em; 
-}
-
   .fanshawe-logo {
    font-size: 2em; 
    }
@@ -937,7 +927,6 @@ p {
       border-top-right-radius: 0;
    }
 
-   /* Headings */
    .testimonials h4 {
       margin-bottom: 25px;
    }
@@ -946,7 +935,6 @@ p {
       margin-top: 0;
    }
 
-   /* Injected testimonial text */
    #testimonial-con h3 {
       font-size: 22px;
       font-weight: 800;
@@ -959,7 +947,6 @@ p {
       line-height: 1.65;
    }
 
-   /* Controls */
    #testimonial-control {
       display: flex;
       justify-content: center;
@@ -975,11 +962,10 @@ p {
       color: #fff;
    }
 
-   /* Desktop layout: placeholder box on left */
    @media (min-width: 64rem) {
       #testimonial-con {
          display: grid;
-         grid-template-columns: 220px 1fr; /* box | text */
+         grid-template-columns: 220px 1fr; 
          column-gap: 48px;
          align-items: start;
          margin-top: 24px;
@@ -990,8 +976,8 @@ p {
          display: block;
          width: 200px;
          height: 200px;
-         border-radius: 20px; /* rounded square */
-         background: #dcdcdc; /* grey box */
+         border-radius: 20px; 
+         background: #dcdcdc; 
       }
 
       #testimonial-con h3 {
@@ -1058,7 +1044,6 @@ p {
          position: relative;
       }
 
-      /* Placeholder box */
       #testimonial-con::before {
          content: "";
          display: block;
@@ -1070,7 +1055,6 @@ p {
          position: relative;
       }
 
-      /* Camera icon centered inside */
       #testimonial-con::after {
          content: "\f030";                
          font-family: "Font Awesome 5 Free";
