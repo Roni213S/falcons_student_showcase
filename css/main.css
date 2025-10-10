@@ -354,6 +354,7 @@ p {
       justify-content: center;
       margin: 0 auto;
       padding-top: 30px;
+      
    }
 
    .hero-img {
@@ -397,19 +398,24 @@ p {
       .hero-text h2, 
       .hero-text h3, 
       .hero-text p, 
+      .hero-text button,
       .hero-text .small-font {
          background: transparent;
          text-align: center;
+         align-content: center;
          margin-bottom: 20px;
-      }
-
-
-      .hero-text p {
          margin-left: auto;
          margin-right: auto;
          border-radius: 28px;
-         align-content: center;
+      }
+
+      .hero-text p {
          padding: .8em 1em;
+      }
+
+      .hero-text button {
+         font-size: 1em;
+         padding: 1em 1.6em;
       }
 
       #date-outline  {
@@ -514,8 +520,7 @@ p {
    }
 
    .map-content {
-      padding: 1em;
-      margin: 1em;
+      margin: 2em;
    }
 
    #itinerary h2 {
@@ -529,6 +534,15 @@ p {
    #itinerary p {
       margin-bottom: 20px;
    }
+
+   #down-arrow {
+      color: #fff;
+      font-size: 1em;
+      padding: 0;
+      margin-left: auto;
+      margin-right: 1em;
+   }
+
 
 /*-------------- End Map Section --------------*/
 
