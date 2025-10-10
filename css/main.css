@@ -72,6 +72,7 @@ Accessibility
       -webkit-animation: bugfix infinite 1s;
       font-size: 18px;
       line-height: 26px;
+      border-radius: 28px;
       /* Any em and rem will be reflected by this number, making it easy to change everything at once */
    }
 
@@ -116,6 +117,17 @@ Accessibility
       float: right;
    }
 
+   #logo img {
+      width: auto;  
+      height: 80px;
+      display: block;
+   }
+   
+   @media (min-width: 48rem) {
+      #logo img {
+         max-width: 160px; 
+      }
+   }
 
    /*------------ Font Options ------------*/
 
@@ -171,68 +183,11 @@ Accessibility
          background-color: #fff;
          margin-top: 10px;
          margin-bottom: 10px;
+         border-radius: 100rem;
       }
       
 
-/*------------ End Boxes ------------*/
-
-/* ___________________________________________
-
-       CSS Guide
-   ___________________________________________ */
-
-/* 01. General Styles
-   02. Navigation                       
-   03. Hero 
-   04. Calendar 
-   05. Map 
-   06. Video 
-   07. Creator 
-   08. Testimonials
-   09. Gallery
-   10. Student Featured Work
-   11. Portfolio
-   12. Footer
-
-/* _____________________________________
-
-   01. General Styles
-   _____________________________________ */
-
-   img {
-      display: block;
-      width: 100%;
-   }
-
-   input, textarea {
-      padding: .75em;
-      border: 1px solid #ccc;
-      background-color: #f7f7f7;
-      border-radius: 5px;
-      width: 95%;
-      margin-bottom: 1em;
-   }
-
-   input[type="submit"] {
-      width: inherit;
-      padding: 1em 2em;
-      background: #e2231a;
-      color: #fff;
-      border: none;
-      float: right;
-   }
-   
-   #logo img {
-      width: auto;  
-      height: 80px;
-      display: block;
-   }
-   
-   @media (min-width: 48rem) {
-      #logo img {
-         max-width: 160px; 
-      }
-   }
+   /*------------ End Boxes ------------*/
 
 /*-------------- End General Styles --------------*/
 
@@ -292,7 +247,7 @@ Accessibility
       }
    }
 
-/* Mobile/ Tablet */
+   /* Mobile/ Tablet */
 
    .burger-btn {
       height: 40px;
@@ -327,7 +282,6 @@ Accessibility
       transition: max-height 0.4s ease, padding 0.3s ease;
    }
 
-   
    #burger-con.open {
       max-height: 28rem;    
       padding: 12px 16px;    
@@ -343,43 +297,43 @@ Accessibility
       margin: .5em 0;
    }
 
-/* Desktop */
+   /* Desktop */
 
-@media screen and (min-width: 64rem) {
+   @media screen and (min-width: 64rem) {
 
-  .burger-btn {
-      display: none;
-  }
-
-  #burger-con {
-      position: static;
-      background: transparent;
-      border: 0;
-      width: auto;
-      padding: 0;
-      overflow: visible;
-      max-height: none;
-      transition: none;
+   .burger-btn {
+         display: none;
    }
 
-   #burger-con .menu-list {
-      display: flex;
-      justify-content: flex-end; 
-      align-items: center;
-      gap: 32px;
-      margin: 0;
-      padding: 0;
-   }
+   #burger-con {
+         position: static;
+         background: transparent;
+         border: 0;
+         width: auto;
+         padding: 0;
+         overflow: visible;
+         max-height: none;
+         transition: none;
+      }
 
-   #burger-con li {
-      margin: 0;
-   }
+      #burger-con .menu-list {
+         display: flex;
+         justify-content: flex-end; 
+         align-items: center;
+         gap: 32px;
+         margin: 0;
+         padding: 0;
+      }
 
-   #sticky-nav-con li {
-      margin: 0;
-      list-style: none;
+      #burger-con li {
+         margin: 0;
+      }
+
+      #sticky-nav-con li {
+         margin: 0;
+         list-style: none;
+      }
    }
-}
 
 /*-------------- End Navigation --------------*/
 
@@ -421,10 +375,7 @@ Accessibility
          margin-bottom: 1rem;
       }
 
-      .hero-img h2.middle {
-         align-self:flex-start;
-         justify-self:center;
-      }
+
    }
 
 
@@ -450,7 +401,7 @@ Accessibility
          margin-bottom: 20px;
          margin-left: auto;
          margin-right: auto;
-         border-radius: 1.5rem;
+         border-radius: 3rem;
       }
 
       .hero-text p {
@@ -514,13 +465,19 @@ Accessibility
       margin-top: 9px;
    }
 
-   #join-us p {
+   #join-us p a{
       display: table;
       margin-left: auto;
       background-color: #fff;
-      border-radius: 1.5rem;
+      color: #646469;
+      border-radius: 3rem;
       padding: 0.8em 1.5em; 
       margin-bottom: 20px;
+      text-decoration: none;
+   }
+
+   #join-us p a:hover {
+      background-color: #fafafa;
    }
 
    .container .event-info {
@@ -801,7 +758,7 @@ Accessibility
       display: table;
       margin-right: auto;
       background-color: #fff;
-      border-radius: 1.5rem;
+      border-radius: 3rem;
       padding: 0.4em 1.5em; 
       margin-top: 20px;
       text-decoration: none;
@@ -965,6 +922,7 @@ Accessibility
 
    .testimonials h4 {
       margin-bottom: 25px;
+      color: #fff;
    }
 
    .testimonials h3 {
@@ -1085,7 +1043,7 @@ Accessibility
       display: block;
       margin: 0 auto;
       background-color: #fff;
-      border-radius: 1.5rem;
+      border-radius: 3rem;
       padding: 0.4em 1.5em; 
       width: fit-content;
       cursor: pointer;
