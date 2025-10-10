@@ -52,19 +52,18 @@
             <h2 class="hidden">Hero Section</h2>
             <div class="hero-img middle">
                 <picture>
-                    <source media="(min-width:800px)" srcset="https://placehold.co/2200x600">
-                    <source media="(min-width:465px)" srcset="https://placehold.co/600x400.png">
-                    <img src="https://placehold.co/600x400.png" alt="FPO">
+                    <source media="(min-width:48rem)" srcset="/images/hero-logo.png">
+                    <img src="/images/hero-image-mobile.png" alt="Fanshawe interactive logo">
                 </picture> 
                 <div class="one-item sm-one-item md-one-item lg-one-item hero-text">
                     <h2 class="red-text">INDUSTRY NIGHT</h2>
                     <p id="date-outline">April 24, 2026</p>
                     <h3>Showcasing Tomorrow's<br>Design Leaders, Today</h3>
-                    <p class="white-text" id="enter-button">ENTER HERE</p>
+                    <button class="white-text" id="enter-button">ENTER HERE</button>
                 </div>
             </div>
         </section>
-        </main>
+        
 
         <section class="calendar">
             <h2 class="hidden">Calendar Section</h2>
@@ -98,7 +97,7 @@
             <h2 class="hidden">Map and Itinerary</h2>
             <div class="two-items sm-two-third md-two-third lg-two-third map-content">
                 <h3 class="white-text">Find Us On Google Maps</h3>
-                <img src="#" alt="Down Arrow">
+                <button id="down-arrow">V</button>
             </div>
             <div class="one-item sm-one-item md-one-item lg-one-item" id="itinerary">
                 <div class="map-content">
@@ -150,12 +149,18 @@
                 </button>
             </div>
         </div>
-    </div>
+        </div>
+
+        <!-- Level 4 Client Project description -->
 
             <div class="one-item sm-one-item md-one-item lg-one-item container">
-                <h3 class="white-text">Level 4 Student Project<br> Showcase - Lorem Ipsum</h3>
-                <p class="white-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-                <p id="learn-more-button">LEARN MORE</p>
+                <h3 class="white-text" id="video-description">Level 4 Student Project<br> Showcase - RCAF Association</h3>
+                <p class="white-text">
+                    Our Level 4 students collaborated with the Royal Canadian Air Force Association (Local 427 Wing) to design and develop a digital storytelling project that 
+                    honours the legacy and contributions of Canadian veterans. This client project highlights the program’s focus on real-world partnerships and impactful design.</p>
+                <p class="learn-more-button">
+                    <a href="#" target="_blank">LEARN MORE</a>
+                </p>
             </div>
 
             
@@ -206,11 +211,10 @@
         <section class="testimonials">
             <h2 class="hidden">Testimonials</h2>
             
-            <div class="two-items sm-two-items md-two-items lg-two-items">
+            <div class="one-item sm-one-item md-one-item lg-one-item">
                 <div>
-
+                    <h4 class="white-text">TESTIMONIALS</h4>
                 </div>
-                <h4 class="white-text">TESTIMONIALS</h4>
             </div>
             
             <div class="one-item sm-one-item md-one-item lg-one-item">
@@ -238,20 +242,40 @@
             <div class="one-item sm-one-item md-one-item lg-one-item container">
                 <h4>Interactive Media Design</h4>
                 <h2>Innovation Starts Here</h2>
-                <p>Students in Interactive Media Design at Fanshawe College learn the skills necessary to build and innovate the future of web development and design</p>
+                <p>The Interactive Media Design program at Fanshawe College equips students with the skills to design and develop engaging digital experiences. Through 
+                    projects in web development, motion design, multimedia authoring, and image production, students prepare for real-world careers in creative industries.</p>
+                    <p class="learn-more-button">
+                        <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design" target="_blank">
+                            LEARN MORE
+                        </a>
+                    </p>
+
             </div>
-            <div class="one-item sm-one-item md-one-item lg-one-item container">
-                <h3>*Main Rotating Image*</h3>
-                <div class="seperator"></div>
-                <div class="seperator"></div>
-                <div class="seperator"></div>
+
+            <!-- Image Carousel -->
+            <div id="carousel-con"></div>
+            <div class="two-items sm-two-items md-two-items lg-two-items" id="carousel-buttons">
+                <button id="carousel-previous">
+                    <i class="fa fa-chevron-circle-left"></i>
+                </button>
+                <button id="carousel-next">
+                    <i class="fa fa-chevron-circle-right"></i>
+                </button>
             </div>
+
             <div class="two-items sm-two-third md-two-third lg-two-third container">
-                <img src="#" alt="Image 1">
-                <img src="#" alt="Image 2">
-            </div>
-            <div class="one-item sm-one-item md-one-item lg-one-item container">
-                <img src="#" alt="Image 3">
+                <picture>
+                    <source media="(min-width:48rem)" srcset="">
+                    <img src="images/gallery-side1.jpg" alt="">
+                </picture> 
+                <picture>
+                    <source media="(min-width:48rem)" srcset="">
+                    <img src="images/gallery-side2.jpg" alt="">
+                </picture> 
+                <picture>
+                    <source media="(min-width:48rem)" srcset="">
+                    <img src="images/gallery-vert.jpg" alt="">
+                </picture> 
             </div>
             <div class="one-item sm-one-item md-one-item lg-one-item container">
                 <p id="see-more-button">SEE MORE</p>
@@ -306,8 +330,6 @@
             </div>
         </section>
 
-
-        
         <!-- Portfolio Section-->
         <section id="portfolio" class="portfolio">
             <h2 class="hidden">Student Projects and Portfolios</h2>
@@ -360,8 +382,9 @@
                     <div class="lightbox-grid"></div>
                 </div>
             </div>
-        </div>
-</section>
+            </div>
+        </section>
+    </main>
         
 
     <!-- Footer  -->
@@ -375,7 +398,7 @@
                 <p>Fanshawe College, IDP3<br>© 2025 All Rights Reserved.</p>
                 <p>137 Dundas St.<br>London, ON N6A 1E9</p>
                 
-                <p>
+                <p class="footer-links">
                     <a href="#">Contact Us</a><br>
                     <a href="#">Location</a>
                 </p>
@@ -390,7 +413,7 @@
             </div>
 
             <div class="footer-tagline">
-                <p>Be part of the bigger picture, follow our journey online.</p>
+                <p class="small-font">Be part of the bigger picture, follow our journey online.</p>
             </div>
             
             <div class="social-links">
@@ -401,7 +424,7 @@
             </div>
             
             <div class="footer-credits">
-                <p>Proudly Designed and Created by Team Falcon.</p>
+                <p class="small-font">Proudly Designed and Created by Team Falcon.</p>
             </div>
         </div>
     </footer>
