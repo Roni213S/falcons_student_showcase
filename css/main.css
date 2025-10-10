@@ -344,38 +344,14 @@ Accessibility
    _____________________________________ */
 
    .hero {
-      padding-top: 4.5rem;
+      background-image: url("/images/FANSHAWELOGORED.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 90%;
+      background-position-y: 11rem;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
       margin: 0 0;
-   }
-
-   .hero-img img {
-      justify-content: center;
-      margin: 0 auto;
-      padding-top: 30px;
-      
-   }
-
-   .hero-img {
-      display: grid;
-      grid-column: span 4;
-      margin-bottom: 1rem;
-   }
-
-   .hero-img > * {
-      grid-column: 1;
-      grid-row: 1;
-   }
-
-
-   @media screen and (min-width: 48rem) {
-
-      .hero-img {
-         display: grid;
-         grid-column: span 6;
-         margin-bottom: 1rem;
-      }
-
-
    }
 
 
@@ -385,7 +361,6 @@ Accessibility
          align-items: center;
          text-align: center;
          letter-spacing: 1px;
-         margin-top: 6rem;
          margin-bottom: 1.5rem;
       }
 
@@ -404,8 +379,17 @@ Accessibility
          border-radius: 3rem;
       }
 
+      .hero-text h2 {
+         text-shadow: 2px 1px 5px rgba(99, 99, 99, 0.4);
+      }
+
       .hero-text p {
          padding: .8em 1em;
+         text-shadow: 2px 1px 5px rgba(88, 88, 88, 0.4);
+      }
+
+      .hero-text h3 {
+         text-shadow: 0.5px 0.5px 4px rgba(168, 168, 168, 0.73);
       }
 
       .hero-text button {
@@ -420,6 +404,7 @@ Accessibility
       #enter-button {
          background-color: rgba(226, 35, 26, 0.8);
          cursor: pointer;
+         text-shadow: 2px 1px 5px rgba(99, 99, 99, 0.65);
       }
 
       #enter-button:hover {
