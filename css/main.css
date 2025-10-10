@@ -174,7 +174,65 @@ Accessibility
       }
       
 
-   /*------------ Boxes ------------*/
+/*------------ End Boxes ------------*/
+
+/* ___________________________________________
+
+       CSS Guide
+   ___________________________________________ */
+
+/* 01. General Styles
+   02. Navigation                       
+   03. Hero 
+   04. Calendar 
+   05. Map 
+   06. Video 
+   07. Creator 
+   08. Testimonials
+   09. Gallery
+   10. Student Featured Work
+   11. Portfolio
+   12. Footer
+
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+   img {
+      display: block;
+      width: 100%;
+   }
+
+   input, textarea {
+      padding: .75em;
+      border: 1px solid #ccc;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      width: 95%;
+      margin-bottom: 1em;
+   }
+
+   input[type="submit"] {
+      width: inherit;
+      padding: 1em 2em;
+      background: #e2231a;
+      color: #fff;
+      border: none;
+      float: right;
+   }
+   
+   #logo img {
+      width: auto;  
+      height: 80px;
+      display: block;
+   }
+   
+   @media (min-width: 48rem) {
+      #logo img {
+         max-width: 160px; 
+      }
+   }
 
 /*-------------- End General Styles --------------*/
 
@@ -332,7 +390,7 @@ Accessibility
    _____________________________________ */
 
    .hero {
-      padding-top: 3.3rem;
+      padding-top: 4.5rem;
       margin: 0 0;
    }
 
@@ -608,7 +666,6 @@ Accessibility
       
    }
    
-
    /*********** Baseline, reset styles ***********/
    
    input[type="range"] {
@@ -864,7 +921,6 @@ Accessibility
       }
 
 
-
    @media screen and (min-width: 48rem) {
       
       .puzzle-wrapper {
@@ -889,9 +945,7 @@ Accessibility
 
    }
 
-
 /*------------ End Creator Showcase ------------*/
-
 
 
 /* _____________________________________
@@ -909,7 +963,6 @@ Accessibility
       border-top-right-radius: 0;
    }
 
-   /* Headings */
    .testimonials h4 {
       margin-bottom: 25px;
    }
@@ -918,7 +971,6 @@ Accessibility
       margin-top: 0;
    }
 
-   /* Injected testimonial text */
    #testimonial-con h3 {
       font-size: 22px;
       font-weight: 800;
@@ -932,7 +984,6 @@ Accessibility
       line-height: 1.65;
    }
 
-   /* Controls */
    #testimonial-control {
       display: flex;
       justify-content: center;
@@ -948,11 +999,10 @@ Accessibility
       color: #fff;
    }
 
-   /* Desktop layout: placeholder box on left */
    @media (min-width: 64rem) {
       #testimonial-con {
          display: grid;
-         grid-template-columns: 220px 1fr; /* box | text */
+         grid-template-columns: 220px 1fr; 
          column-gap: 48px;
          align-items: start;
          margin-top: 24px;
@@ -977,45 +1027,6 @@ Accessibility
       }
    }
 
-      #testimonial-con h3 {
-         font-size: 22px;
-         font-weight: 800;
-         color: #fff;       
-         margin: 0 0 8px;
-         text-align: left;
-      }
-
-      #testimonial-con h4 {
-         font-size: 16px;
-         font-weight: 500;
-         font-style: italic; 
-         color: #fff;         
-         margin: 0 0 12px;
-         text-align: left;
-      }
-
-      #testimonial-con p {
-         font-size: 16px;
-         line-height: 1.6;
-         color: #fff;         
-         margin: 0 0 18px;
-         text-align: left;
-      }
-
-      #testimonial-control {
-         display: flex;
-         justify-content: center;
-         gap: 28px;
-         padding: 18px 0 8px;
-      }
-
-      #testimonial-control button {
-         background: transparent;
-         border: none;
-         font-size: 32px;
-         cursor: pointer;
-         color: #fff;
-      }
 
 /* For Desktop */
 
@@ -1032,7 +1043,6 @@ Accessibility
          position: relative;
       }
 
-      /* Placeholder box */
       #testimonial-con::before {
          content: "";
          display: block;
@@ -1042,20 +1052,6 @@ Accessibility
          background: #dcdcdc;
          justify-self: start;
          position: relative;
-      }
-
-      /* Camera icon centered inside */
-      #testimonial-con::after {
-         content: "\f030";                
-         font-family: "Font Awesome 5 Free";
-         font-weight: 900;                 
-         font-size: 40px;                 
-         color: #555;                     
-         position: absolute;
-         top: 50%;
-         left: 110px;                      
-         transform: translate(-50%, -50%); 
-         pointer-events: none;
       }
    }
 
@@ -1180,7 +1176,6 @@ Accessibility
       outline: 0;
       background: transparent;
       color: #333;
-      transform: translateY(20%);
    }
    
    .portfolio-search .search-go {
@@ -1344,6 +1339,7 @@ Accessibility
          display: flex; 
       }
    }
+
 
 /*------------ End Portfolio Section  ------------*/
 
