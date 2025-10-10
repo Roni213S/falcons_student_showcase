@@ -347,13 +347,24 @@ Accessibility
       background-image: url("/images/FANSHAWELOGORED.svg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 90%;
-      background-position-y: 11rem;
+      background-size: 60%;
+      background-position-y: 10.5rem;
       padding-top: 8rem;
       padding-bottom: 8rem;
       margin: 0 0;
    }
 
+    @media screen and (min-width: 48rem) {
+      .hero {
+         background-size: 50%;
+      }
+    }
+
+    @media screen and (min-width: 64rem) {
+      .hero {
+         background-size: 40%;
+      }
+    }
 
    /*------------ Hero Text ------------*/
 
@@ -363,7 +374,6 @@ Accessibility
          letter-spacing: 1px;
          margin-bottom: 1.5rem;
       }
-
 
       .hero-text h2, 
       .hero-text h3, 
@@ -380,7 +390,7 @@ Accessibility
       }
 
       .hero-text h2 {
-         text-shadow: 2px 1px 5px rgba(99, 99, 99, 0.4);
+         text-shadow: 2px 1px 4px rgba(85, 85, 85, 0.43);
       }
 
       .hero-text p {
@@ -389,7 +399,7 @@ Accessibility
       }
 
       .hero-text h3 {
-         text-shadow: 0.5px 0.5px 4px rgba(168, 168, 168, 0.73);
+         text-shadow: 0.5px 0.5px 4px rgba(80, 80, 80, 0.73);
       }
 
       .hero-text button {
